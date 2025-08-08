@@ -25,7 +25,7 @@
         "type": "image",
         "top": 43,
         "left": 21,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 283.33333333333337,
         "height": 62.5
       },
@@ -100,7 +100,7 @@
         "type": "image",
         "top": 30,
         "left": 45,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 637.5,
         "height": 62.5
       },
@@ -185,7 +185,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -270,7 +270,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -345,7 +345,7 @@
         "type": "image",
         "top": 30.625,
         "left": 32.25,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "width": 117,
         "height": 101
       },
@@ -420,7 +420,7 @@
         "type": "image",
         "top": 44,
         "left": 22.21428571428571,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 300.5357142857143,
         "height": 62.5
       },
@@ -495,7 +495,7 @@
         "type": "image",
         "top": 22.000000000000004,
         "left": 45.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -570,7 +570,7 @@
         "type": "image",
         "top": 37,
         "left": 31,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -645,7 +645,7 @@
         "type": "image",
         "top": 48,
         "left": 16,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 212.5,
         "height": 62.5
       },
@@ -720,7 +720,7 @@
         "type": "image",
         "top": 34,
         "left": 32,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -795,7 +795,7 @@
         "type": "image",
         "top": 40,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -870,7 +870,7 @@
         "type": "image",
         "top": 43,
         "left": 21,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 283.33333333333337,
         "height": 62.5
       },
@@ -945,7 +945,7 @@
         "type": "image",
         "top": 30,
         "left": 45,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 637.5,
         "height": 62.5
       },
@@ -1030,7 +1030,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -1115,7 +1115,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -1191,7 +1191,7 @@
         "type": "image",
         "top": 30.625,
         "left": 32.25,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "width": 117,
         "height": 101
       },
@@ -1266,7 +1266,7 @@
         "type": "image",
         "top": 44,
         "left": 22.21428571428571,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 300.5357142857143,
         "height": 62.5
       },
@@ -1341,7 +1341,7 @@
         "type": "image",
         "top": 22.000000000000004,
         "left": 45.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -1416,7 +1416,7 @@
         "type": "image",
         "top": 37,
         "left": 31,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -1491,7 +1491,7 @@
         "type": "image",
         "top": 48,
         "left": 16,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 212.5,
         "height": 62.5
       },
@@ -1566,7 +1566,7 @@
         "type": "image",
         "top": 34,
         "left": 32,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -1641,7 +1641,7 @@
         "type": "image",
         "top": 40,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -1716,7 +1716,7 @@
         "type": "image",
         "top": 43,
         "left": 21,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 283.33333333333337,
         "height": 62.5
       },
@@ -1802,7 +1802,7 @@
         "type": "image",
         "top": 30,
         "left": 45,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 637.5,
         "height": 62.5
       },
@@ -1898,7 +1898,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -1994,7 +1994,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -2080,7 +2080,7 @@
         "type": "image",
         "top": 30.625,
         "left": 32.25,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "width": 117,
         "height": 101
       },
@@ -2166,7 +2166,7 @@
         "type": "image",
         "top": 44,
         "left": 22.21428571428571,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 300.5357142857143,
         "height": 62.5
       },
@@ -2252,7 +2252,7 @@
         "type": "image",
         "top": 22.000000000000004,
         "left": 45.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -2338,7 +2338,7 @@
         "type": "image",
         "top": 37,
         "left": 31,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -2424,7 +2424,7 @@
         "type": "image",
         "top": 32,
         "left": 16,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 212.5,
         "height": 62.5
       },
@@ -2510,7 +2510,7 @@
         "type": "image",
         "top": 34,
         "left": 32,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -2596,7 +2596,7 @@
         "type": "image",
         "top": 40,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -2682,7 +2682,7 @@
         "type": "image",
         "top": 32,
         "left": 23,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 283.33333333333337,
         "height": 62.5
       },
@@ -2692,7 +2692,7 @@
         "left": 158.671875,
         "width": 150,
         "height": 227,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -2795,7 +2795,7 @@
         "type": "image",
         "top": 23,
         "left": 46,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 637.5,
         "height": 62.5
       },
@@ -2856,7 +2856,7 @@
         "left": 515,
         "width": 203,
         "height": 228,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -2908,7 +2908,7 @@
         "type": "image",
         "top": 32,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -2969,7 +2969,7 @@
         "left": 271,
         "width": 198,
         "height": 227,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -3021,7 +3021,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -3083,7 +3083,7 @@
         "left": 285,
         "width": 189,
         "height": 227,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -3135,7 +3135,7 @@
         "type": "image",
         "top": 32.625,
         "left": 34.25,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "width": 117,
         "height": 101
       },
@@ -3196,7 +3196,7 @@
         "left": 551,
         "width": 170,
         "height": 227,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -3248,7 +3248,7 @@
         "type": "image",
         "top": 35,
         "left": 23.21428571428571,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 300.5357142857143,
         "height": 62.5
       },
@@ -3258,7 +3258,7 @@
         "left": 148.78125,
         "width": 189,
         "height": 227,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -3361,7 +3361,7 @@
         "type": "image",
         "top": 30.000000000000004,
         "left": 42.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -3422,7 +3422,7 @@
         "left": 435.53125,
         "width": 225,
         "height": 227,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -3474,7 +3474,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -3535,7 +3535,7 @@
         "left": 270,
         "width": 197,
         "height": 227,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -3587,7 +3587,7 @@
         "type": "image",
         "top": 30,
         "left": 17,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 212.5,
         "height": 62.5
       },
@@ -3597,7 +3597,7 @@
         "left": 93,
         "width": 130,
         "height": 227,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -3700,7 +3700,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -3761,7 +3761,7 @@
         "left": 270,
         "width": 197,
         "height": 227,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -3813,7 +3813,7 @@
         "type": "image",
         "top": 35,
         "left": 23.21428571428571,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 300.5357142857143,
         "height": 62.5
       },
@@ -3823,7 +3823,7 @@
         "left": 148.78125,
         "width": 189,
         "height": 227,
-        "src": "http://localhost:8081/uploads/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "text",
@@ -3926,7 +3926,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -3936,7 +3936,7 @@
         "left": -0.90625,
         "width": 200,
         "height": 160,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png"
       },
       {
         "type": "price",
@@ -4060,7 +4060,7 @@
         "type": "image",
         "top": 30.000000000000004,
         "left": 42.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -4070,7 +4070,7 @@
         "left": -0.375,
         "width": 234,
         "height": 185,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png?t=1745536925255"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png?t=1745536925255"
       },
       {
         "type": "price",
@@ -4196,7 +4196,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -4206,7 +4206,7 @@
         "left": -1.40625,
         "width": 275,
         "height": 239,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png?t=1745536925255"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png?t=1745536925255"
       },
       {
         "type": "text",
@@ -4330,7 +4330,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -4340,7 +4340,7 @@
         "left": -1.40625,
         "width": 275,
         "height": 239,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png?t=1745536925255"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png?t=1745536925255"
       },
       {
         "type": "text",
@@ -4464,7 +4464,7 @@
         "type": "image",
         "top": 21.625,
         "left": 36.25,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "width": 117,
         "height": 101
       },
@@ -4474,7 +4474,7 @@
         "left": 215.59375,
         "width": 154,
         "height": 128,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png?t=1745536925255"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png?t=1745536925255"
       },
       {
         "type": "price",
@@ -4588,7 +4588,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -4598,7 +4598,7 @@
         "left": -0.90625,
         "width": 200,
         "height": 160,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png"
       },
       {
         "type": "price",
@@ -4722,7 +4722,7 @@
         "type": "image",
         "top": 30.000000000000004,
         "left": 42.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -4732,7 +4732,7 @@
         "left": -0.375,
         "width": 234,
         "height": 185,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png?t=1745536925255"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png?t=1745536925255"
       },
       {
         "type": "price",
@@ -4858,7 +4858,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -4868,7 +4868,7 @@
         "left": -1.40625,
         "width": 275,
         "height": 239,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png?t=1745536925255"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png?t=1745536925255"
       },
       {
         "type": "text",
@@ -4992,7 +4992,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -5002,7 +5002,7 @@
         "left": -1.40625,
         "width": 275,
         "height": 239,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png?t=1745536925255"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png?t=1745536925255"
       },
       {
         "type": "text",
@@ -5126,7 +5126,7 @@
         "type": "image",
         "top": 30,
         "left": 15,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 212.5,
         "height": 62.5
       },
@@ -5136,7 +5136,7 @@
         "left": 0.59375,
         "width": 126,
         "height": 99,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png?t=1745536925255"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png?t=1745536925255"
       },
       {
         "type": "price",
@@ -5260,7 +5260,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -5270,7 +5270,7 @@
         "left": -0.90625,
         "width": 200,
         "height": 160,
-        "src": "http://localhost:8081/uploads/1/REDBLOCK.png"
+        "src": "${BASE_URL}/uploads/1/REDBLOCK.png"
       },
       {
         "type": "price",
@@ -5394,7 +5394,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -5404,7 +5404,7 @@
         "left": 0.59375,
         "width": 352,
         "height": 140,
-        "src": "http://localhost:8081/uploads/redBlock_portrait.png"
+        "src": "${BASE_URL}/uploads/redBlock_portrait.png"
       },
       {
         "type": "price",
@@ -5558,7 +5558,7 @@
         "type": "image",
         "top": 30.000000000000004,
         "left": 42.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -5568,7 +5568,7 @@
         "left": -1.375,
         "width": 230,
         "height": 280,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "number",
@@ -5722,7 +5722,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -5732,7 +5732,7 @@
         "left": -2.90625,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "price",
@@ -5886,7 +5886,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -5896,7 +5896,7 @@
         "left": -2.90625,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "price",
@@ -6050,7 +6050,7 @@
         "type": "image",
         "top": 21.625,
         "left": 36.25,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "width": 117,
         "height": 101
       },
@@ -6111,7 +6111,7 @@
         "left": 210.578125,
         "width": 133,
         "height": 146,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "text",
@@ -6214,7 +6214,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -6224,7 +6224,7 @@
         "left": 0.59375,
         "width": 352,
         "height": 140,
-        "src": "http://localhost:8081/uploads/redBlock_portrait.png"
+        "src": "${BASE_URL}/uploads/redBlock_portrait.png"
       },
       {
         "type": "price",
@@ -6378,7 +6378,7 @@
         "type": "image",
         "top": 30.000000000000004,
         "left": 42.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -6388,7 +6388,7 @@
         "left": -1.375,
         "width": 230,
         "height": 280,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "number",
@@ -6542,7 +6542,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -6552,7 +6552,7 @@
         "left": -2.90625,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "price",
@@ -6706,7 +6706,7 @@
         "type": "image",
         "top": 30,
         "left": 15,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 212.5,
         "height": 62.5
       },
@@ -6716,7 +6716,7 @@
         "left": -2.90625,
         "width": 237,
         "height": 102,
-        "src": "http://localhost:8081/uploads/redBlock_portrait.png"
+        "src": "${BASE_URL}/uploads/redBlock_portrait.png"
       },
       {
         "type": "price",
@@ -6870,7 +6870,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -6880,7 +6880,7 @@
         "left": -2.90625,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "price",
@@ -7034,7 +7034,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -7044,7 +7044,7 @@
         "left": 0.59375,
         "width": 352,
         "height": 140,
-        "src": "http://localhost:8081/uploads/redBlock_portrait.png"
+        "src": "${BASE_URL}/uploads/redBlock_portrait.png"
       },
       {
         "type": "price",
@@ -7198,7 +7198,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -7219,7 +7219,7 @@
         "left": -1.5,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "text",
@@ -7362,7 +7362,7 @@
         "type": "image",
         "top": 30.000000000000004,
         "left": 42.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -7372,7 +7372,7 @@
         "left": 0,
         "width": 248,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "price",
@@ -7526,7 +7526,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -7547,7 +7547,7 @@
         "left": -9.5,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "text",
@@ -7690,7 +7690,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -7711,7 +7711,7 @@
         "left": -9.5,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "text",
@@ -7854,7 +7854,7 @@
         "type": "image",
         "top": 21.625,
         "left": 36.25,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "width": 117,
         "height": 101
       },
@@ -7915,7 +7915,7 @@
         "left": 207.578125,
         "width": 133,
         "height": 143,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "text",
@@ -8018,7 +8018,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -8039,7 +8039,7 @@
         "left": -1.5,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "text",
@@ -8182,7 +8182,7 @@
         "type": "image",
         "top": 30.000000000000004,
         "left": 42.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -8192,7 +8192,7 @@
         "left": 0,
         "width": 248,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "price",
@@ -8346,7 +8346,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -8367,7 +8367,7 @@
         "left": -9.5,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "text",
@@ -8510,7 +8510,7 @@
         "type": "image",
         "top": 30,
         "left": 15,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 212.5,
         "height": 62.5
       },
@@ -8520,7 +8520,7 @@
         "left": -7,
         "width": 117,
         "height": 180,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "text",
@@ -8674,7 +8674,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -8695,7 +8695,7 @@
         "left": -9.5,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "text",
@@ -8838,7 +8838,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -8859,7 +8859,7 @@
         "left": -1.5,
         "width": 200,
         "height": 240,
-        "src": "http://localhost:8081/uploads/1/redBlock_reglette.png"
+        "src": "${BASE_URL}/uploads/1/redBlock_reglette.png"
       },
       {
         "type": "text",
@@ -9002,7 +9002,7 @@
         "type": "image",
         "top": 30,
         "left": 20,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 283.33333333333337,
         "height": 62.5
       },
@@ -9057,7 +9057,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -9142,7 +9142,7 @@
         "type": "image",
         "top": 21.625,
         "left": 34.25,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "width": 117,
         "height": 101
       },
@@ -9217,7 +9217,7 @@
         "type": "image",
         "top": 30,
         "left": 21.21428571428571,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 300.5357142857143,
         "height": 62.5
       },
@@ -9238,7 +9238,7 @@
         "left": 179.28125,
         "width": 168,
         "height": 100,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       },
       {
         "type": "text",
@@ -9310,7 +9310,7 @@
         "type": "image",
         "top": 30.000000000000004,
         "left": 42.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -9371,7 +9371,7 @@
         "left": 509.03125,
         "width": 200,
         "height": 133,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       }
     ],
     "createdAt": "2023-10-26T10:03:00Z",
@@ -9403,7 +9403,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -9453,7 +9453,7 @@
         "left": 300,
         "width": 200,
         "height": 133,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -9496,7 +9496,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -9546,7 +9546,7 @@
         "left": 300,
         "width": 200,
         "height": 133,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -9589,7 +9589,7 @@
         "type": "image",
         "top": 21.625,
         "left": 36.25,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "width": 117,
         "height": 101
       },
@@ -9641,7 +9641,7 @@
         "left": 572.09375,
         "width": 178,
         "height": 84,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       }
     ],
     "createdAt": "2023-10-26T10:03:00Z",
@@ -9673,7 +9673,7 @@
         "type": "image",
         "top": 30,
         "left": 21.21428571428571,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 300.5357142857143,
         "height": 62.5
       },
@@ -9694,7 +9694,7 @@
         "left": 179.28125,
         "width": 168,
         "height": 100,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       },
       {
         "type": "text",
@@ -9766,7 +9766,7 @@
         "type": "image",
         "top": 30.000000000000004,
         "left": 42.42424242424243,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 601.010101010101,
         "height": 62.50000000000001
       },
@@ -9827,7 +9827,7 @@
         "left": 509.03125,
         "width": 200,
         "height": 133,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       }
     ],
     "createdAt": "2023-10-26T10:03:00Z",
@@ -9859,7 +9859,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -9909,7 +9909,7 @@
         "left": 300,
         "width": 200,
         "height": 133,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -9952,7 +9952,7 @@
         "type": "image",
         "top": 30,
         "left": 15,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 212.5,
         "height": 62.5
       },
@@ -9962,7 +9962,7 @@
         "left": 100,
         "width": 156,
         "height": 89,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -10045,7 +10045,7 @@
         "type": "image",
         "top": 30,
         "left": 30,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 425,
         "height": 62.5
       },
@@ -10095,7 +10095,7 @@
         "left": 300,
         "width": 200,
         "height": 133,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -10138,7 +10138,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -10169,7 +10169,7 @@
         "left": 187.5,
         "width": 188,
         "height": 107,
-        "src": "http://localhost:8081/uploads/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/REMISE-CARTE.png"
       },
       {
         "type": "text",
@@ -10231,7 +10231,7 @@
         "type": "image",
         "top": 30,
         "left": 22.5,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "width": 318.75,
         "height": 62.5
       },
@@ -10303,7 +10303,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/50Sur2.png",
+        "src": "${BASE_URL}/uploads/50Sur2.png",
         "backgroundColor": "#fc1c03"
       },
       {
@@ -10384,7 +10384,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -10531,7 +10531,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -10569,7 +10569,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -10651,7 +10651,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -10745,7 +10745,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -10840,7 +10840,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -10922,7 +10922,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11004,7 +11004,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11086,7 +11086,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11168,7 +11168,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11250,7 +11250,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11332,7 +11332,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11414,7 +11414,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11496,7 +11496,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11578,7 +11578,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11660,7 +11660,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11742,7 +11742,7 @@
         "left": 0,
         "width": 375,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11824,7 +11824,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11906,7 +11906,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -11988,7 +11988,7 @@
         "left": 0,
         "width": 250,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -12070,7 +12070,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -12152,7 +12152,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -12246,7 +12246,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -12340,7 +12340,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -12434,7 +12434,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -12528,7 +12528,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -12622,7 +12622,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -12716,7 +12716,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -12810,7 +12810,7 @@
         "left": 0,
         "width": 375,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -12904,7 +12904,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13010,7 +13010,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13128,7 +13128,7 @@
         "left": 0,
         "width": 250,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13258,7 +13258,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13352,7 +13352,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13434,7 +13434,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13516,7 +13516,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13599,7 +13599,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13683,7 +13683,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13768,7 +13768,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13854,7 +13854,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -13940,7 +13940,7 @@
         "left": 0,
         "width": 375,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -14027,7 +14027,7 @@
         "left": 0,
         "width": 250,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -14115,7 +14115,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -14204,7 +14204,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -14294,7 +14294,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -14384,7 +14384,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -14468,7 +14468,7 @@
         "left": 292.59375,
         "width": 176,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "number",
@@ -14508,7 +14508,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -14592,7 +14592,7 @@
         "left": 292.59375,
         "width": 176,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "number",
@@ -14633,7 +14633,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -14717,7 +14717,7 @@
         "left": 292.59375,
         "width": 176,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "number",
@@ -14759,7 +14759,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -14843,7 +14843,7 @@
         "left": 292.59375,
         "width": 176,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "number",
@@ -14885,7 +14885,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -14969,7 +14969,7 @@
         "left": 175.59375,
         "width": 147,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "number",
@@ -15009,7 +15009,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -15093,7 +15093,7 @@
         "left": 191.59375,
         "width": 147,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "number",
@@ -15133,7 +15133,7 @@
         "left": 0,
         "width": 375,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -15217,7 +15217,7 @@
         "left": 210.59375,
         "width": 147,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "number",
@@ -15263,7 +15263,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -15347,7 +15347,7 @@
         "left": 586.59375,
         "width": 147,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "number",
@@ -15394,7 +15394,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -15478,7 +15478,7 @@
         "left": 543.59375,
         "width": 147,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "number",
@@ -15518,7 +15518,7 @@
         "left": 0,
         "width": 250,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -15602,7 +15602,7 @@
         "left": 120.59375,
         "width": 121,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "number",
@@ -15642,7 +15642,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -15659,7 +15659,7 @@
         "left": 582.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-IMMEDIATE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       },
       {
         "type": "price",
@@ -15755,7 +15755,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -15772,7 +15772,7 @@
         "left": 314.59375,
         "width": 188,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -15845,7 +15845,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -15862,7 +15862,7 @@
         "left": 314.59375,
         "width": 188,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -15935,7 +15935,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -15952,7 +15952,7 @@
         "left": 314.59375,
         "width": 188,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -16025,7 +16025,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -16042,7 +16042,7 @@
         "left": 314.59375,
         "width": 188,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -16128,7 +16128,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -16145,7 +16145,7 @@
         "left": 145.59375,
         "width": 188,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -16218,7 +16218,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -16235,7 +16235,7 @@
         "left": 169.59375,
         "width": 188,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -16308,7 +16308,7 @@
         "left": 0,
         "width": 375,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -16325,7 +16325,7 @@
         "left": 187.59375,
         "width": 188,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -16398,7 +16398,7 @@
         "left": 0,
         "width": 250,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -16415,7 +16415,7 @@
         "left": 93.59375,
         "width": 157,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -16488,7 +16488,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -16505,7 +16505,7 @@
         "left": 528.59375,
         "width": 223,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -16578,7 +16578,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -16595,7 +16595,7 @@
         "left": 491.59375,
         "width": 223,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -16668,7 +16668,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "src": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlanReglette.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -16685,7 +16685,7 @@
         "left": 594.59375,
         "width": 157,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/1/REMISE-CARTE.png"
+        "src": "${BASE_URL}/uploads/categories/images/1/REMISE-CARTE.png"
       },
       {
         "type": "price",
@@ -16758,7 +16758,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -16840,7 +16840,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -16922,7 +16922,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -17004,7 +17004,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -17086,7 +17086,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -17180,7 +17180,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -17274,7 +17274,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -17368,7 +17368,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -17462,7 +17462,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -17556,7 +17556,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -17638,7 +17638,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -17688,7 +17688,7 @@
         "left": 26.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -17704,7 +17704,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -17754,7 +17754,7 @@
         "left": 26.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -17770,7 +17770,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -17820,7 +17820,7 @@
         "left": 26.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -17836,7 +17836,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -17886,7 +17886,7 @@
         "left": 26.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -17902,7 +17902,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -17952,7 +17952,7 @@
         "left": 22.59375,
         "width": 110,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -17968,7 +17968,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18018,7 +18018,7 @@
         "left": 22.59375,
         "width": 110,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -18034,7 +18034,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18084,7 +18084,7 @@
         "left": 15.59375,
         "width": 110,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -18100,7 +18100,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18150,7 +18150,7 @@
         "left": 15.59375,
         "width": 110,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -18166,7 +18166,7 @@
         "left": 0,
         "width": 375,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18216,7 +18216,7 @@
         "left": 15.59375,
         "width": 110,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -18232,7 +18232,7 @@
         "left": 0,
         "width": 250,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18282,7 +18282,7 @@
         "left": 14.59375,
         "width": 110,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -18298,7 +18298,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18348,7 +18348,7 @@
         "left": 535.59375,
         "width": 80,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       }
     ]
   },
@@ -18364,7 +18364,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18414,7 +18414,7 @@
         "left": 22.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       },
       {
         "type": "price",
@@ -18443,7 +18443,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18493,7 +18493,7 @@
         "left": 22.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       },
       {
         "type": "price",
@@ -18522,7 +18522,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18572,7 +18572,7 @@
         "left": 22.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       },
       {
         "type": "price",
@@ -18601,7 +18601,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18651,7 +18651,7 @@
         "left": 22.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       },
       {
         "type": "price",
@@ -18680,7 +18680,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18730,7 +18730,7 @@
         "left": 22.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       },
       {
         "type": "price",
@@ -18759,7 +18759,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18809,7 +18809,7 @@
         "left": 22.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       },
       {
         "type": "price",
@@ -18838,7 +18838,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18888,7 +18888,7 @@
         "left": 22.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       },
       {
         "type": "price",
@@ -18917,7 +18917,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -18967,7 +18967,7 @@
         "left": 22.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       },
       {
         "type": "price",
@@ -18996,7 +18996,7 @@
         "left": 0,
         "width": 375,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19046,7 +19046,7 @@
         "left": 22.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       },
       {
         "type": "price",
@@ -19075,7 +19075,7 @@
         "left": 0,
         "width": 250,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/2/bestDeal.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/2/bestDeal.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19125,7 +19125,7 @@
         "left": 15.59375,
         "width": 100,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/2/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/2/mediaNui.png"
       },
       {
         "type": "price",
@@ -19154,7 +19154,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19204,7 +19204,7 @@
         "left": 17.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -19230,7 +19230,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19280,7 +19280,7 @@
         "left": 17.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -19306,7 +19306,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19356,7 +19356,7 @@
         "left": 17.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -19382,7 +19382,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19432,7 +19432,7 @@
         "left": 17.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -19458,7 +19458,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19508,7 +19508,7 @@
         "left": 17.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -19547,7 +19547,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19597,7 +19597,7 @@
         "left": 17.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -19636,7 +19636,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19686,7 +19686,7 @@
         "left": 17.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -19725,7 +19725,7 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19775,7 +19775,7 @@
         "left": 17.59375,
         "width": 150,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -19814,7 +19814,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19864,7 +19864,7 @@
         "left": 17.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -19903,7 +19903,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -19953,7 +19953,7 @@
         "left": 17.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -19992,7 +19992,7 @@
         "left": 0,
         "width": 375,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20042,7 +20042,7 @@
         "left": 17.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -20081,7 +20081,7 @@
         "left": 0,
         "width": 250,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20131,7 +20131,7 @@
         "left": 10.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -20170,7 +20170,7 @@
         "left": 0,
         "width": 250,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20220,7 +20220,7 @@
         "left": 10.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -20246,7 +20246,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20296,7 +20296,7 @@
         "left": 27.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -20335,7 +20335,7 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20385,7 +20385,7 @@
         "left": 27.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -20411,7 +20411,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20461,7 +20461,7 @@
         "left": 20.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -20497,7 +20497,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20547,7 +20547,7 @@
         "left": 20.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -20596,7 +20596,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20646,7 +20646,7 @@
         "left": 21.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -20685,7 +20685,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20735,7 +20735,7 @@
         "left": 21.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -20761,7 +20761,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20811,7 +20811,7 @@
         "left": 17.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
@@ -20837,7 +20837,7 @@
         "left": 0,
         "width": 375,
         "height": 142.85714285714286,
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "backgroundColor": "#000000"
       },
       {
@@ -20887,7 +20887,7 @@
         "left": 17.59375,
         "width": 115,
         "height": "auto",
-        "src": "http://localhost:8081/uploads/categories/images/4/mediaNui.png"
+        "src": "${BASE_URL}/uploads/categories/images/4/mediaNui.png"
       },
       {
         "type": "text",
