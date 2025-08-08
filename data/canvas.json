@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "name": "Bon plan",
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 125,
+        "elements": [],
+        "src": "http://localhost:8081/uploads/bonPlan.png",
+        "srcRglt": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "backgroundColor": "#EB0023"
+      },
+      {
+        "type": "background-color",
+        "top": 125,
+        "left": 0,
+        "width": 500,
+        "height": 375,
+        "backgroundColor": "#ffea00"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Best deal",
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 125,
+        "elements": [],
+        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "srcRglt": null,
+        "backgroundColor": "#000000"
+      },
+      {
+        "type": "background-color",
+        "top": 125,
+        "left": 0,
+        "width": 500,
+        "height": 375,
+        "backgroundColor": "#ffea00"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Fin de série",
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 125,
+        "elements": [],
+        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "srcRglt": null,
+        "backgroundColor": "#EB0023"
+      },
+      {
+        "type": "background-color",
+        "top": 125,
+        "left": 0,
+        "width": 500,
+        "height": 375,
+        "backgroundColor": "#ffea00"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Fin de série",
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 125,
+        "elements": [],
+        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "srcRglt": null,
+        "backgroundColor": "#000000"
+      },
+      {
+        "type": "background-color",
+        "top": 125,
+        "left": 0,
+        "width": 500,
+        "height": 375,
+        "backgroundColor": "#ffea00"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "-50% sur le 2ème",
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 125,
+        "elements": [],
+        "src": "http://localhost:8081/uploads/50Sur2.png",
+        "srcRglt": null,
+        "backgroundColor": "#fc1c03"
+      },
+      {
+        "type": "background-color",
+        "top": 125,
+        "left": 0,
+        "width": 500,
+        "height": 375,
+        "backgroundColor": "#ffea00"
+      }
+    ]
+  }
+]

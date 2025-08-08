@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "bp-std",
+    "templateId": 1
+  },
+  {
+    "id": 2,
+    "name": "bp-pb",
+    "templateId": 2
+  },
+  {
+    "id": 3,
+    "name": "bp-ppn",
+    "templateId": 3
+  },
+  {
+    "id": 4,
+    "name": "bp-fid",
+    "templateId": 4
+  },
+  {
+    "id": 5,
+    "name": "bp-bri",
+    "templateId": 5
+  },
+  {
+    "id": 6,
+    "name": "bp-bri-2",
+    "templateId": 6
+  },
+  {
+    "id": 7,
+    "name": "bp-gratuit",
+    "templateId": 7
+  },
+  {
+    "id": 8,
+    "name": "bp-sup-fid",
+    "templateId": 8
+  },
+  {
+    "id": 9,
+    "name": "crf-fs-std",
+    "templateId": 9
+  },
+  {
+    "id": 10,
+    "name": "crf-fs-pb",
+    "templateId": 10
+  },
+  {
+    "id": 11,
+    "name": "mn-bd-std",
+    "templateId": 11
+  },
+  {
+    "id": 12,
+    "name": "mn-bd-pb",
+    "templateId": 12
+  },
+  {
+    "id": 13,
+    "name": "mn-fs-std",
+    "templateId": 13
+  },
+  {
+    "id": 14,
+    "name": "mn-fs-pb",
+    "templateId": 14
+  },
+  {
+    "id": 15,
+    "name": "best-deal",
+    "templateId": 15
+  },
+  {
+    "id": 16,
+    "name": "50 - 600x600",
+    "templateId": 16
+  },
+  {
+    "id": 17,
+    "name": "bp-basic.png",
+    "templateId": 17
+  },
+  {
+    "id": 18,
+    "name": "bp-pxbarre.png",
+    "templateId": 18
+  },
+  {
+    "id": 19,
+    "name": "bp-ppn.png",
+    "templateId": 19
+  },
+  {
+    "id": 20,
+    "name": "bp-carte.png",
+    "templateId": 20
+  },
+  {
+    "id": 21,
+    "name": "bp-fidelite.png",
+    "templateId": 21
+  },
+  {
+    "id": 22,
+    "name": "fs-crf-basic.png",
+    "templateId": 22
+  },
+  {
+    "id": 23,
+    "name": "fs-pxbarre.png",
+    "templateId": 23
+  },
+  {
+    "id": 24,
+    "name": "best-deal-prix-standard.png",
+    "templateId": 24
+  },
+  {
+    "id": 25,
+    "name": "best-deal-prix-barre.png",
+    "templateId": 25
+  },
+  {
+    "id": 26,
+    "name": "fin-serie-prix-standard.png",
+    "templateId": 26
+  },
+  {
+    "id": 27,
+    "name": "fin-serie-prix-barre.png",
+    "templateId": 27
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "email": "cedric.noguera@lwane.com",
+    "passwordHash": "$2b$10$wKtv9zultlETNc7F5ro9COEtsesD/A/ZxUDaTvNbq8yTVhxtWLjTW",
+    "name": "Cédric",
+    "company": {
+      "idCompany": 1,
+      "nameCompany": "Carrefour"
+    },
+    "role": "super_admin"
+  },
+  {
+    "id": 2,
+    "email": "rudolph@mail.com",
+    "passwordHash": "$2b$10$cpglq1lmdxyQLFojutWf.uKvPQfMcCI52KZOxxvkcREBZN9QJoHW.",
+    "name": "Rudolph",
+    "company": {
+      "idCompany": 1,
+      "nameCompany": "Carrefour"
+    },
+    "role": "super_admin"
+  },
+  {
+    "id": 3,
+    "email": "fabrice.folituu@lwane.com",
+    "passwordHash": "$2b$10$FJUj.SHcoombxT0U2b9Q7eMKzm4rTiZ0rT8uY1V05iTTju7mc/rBq",
+    "name": "Fabrice",
+    "company": {
+      "idCompany": 1,
+      "nameCompany": "Carrefour"
+    },
+    "role": "super_admin"
+  },
+  {
+    "id": 5,
+    "email": "greg@mail.pf",
+    "passwordHash": "$2b$10$QDDHnb0U.TaFaf1ZO.n6x.yvOAnIpiZ.t712qeNJi9g2IU6daBvlu",
+    "name": "Greg",
+    "company": {
+      "idCompany": 2,
+      "nameCompany": "Média Nui"
+    },
+    "role": "user"
+  }
+]

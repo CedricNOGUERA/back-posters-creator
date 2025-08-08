@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Carrefour",
+    "cover": "uploads/shopMiniatures/Carrefour/carrefour.svg"
+  },
+  {
+    "id": 2,
+    "name": "Média Nui",
+    "cover": "uploads/shopMiniatures/Média Nui/media-nui.svg"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "id": 17,
+    "name": "bp-basic",
+    "image": "bp-basic.png",
+    "categoryId": 1,
+    "shopIds": [
+      1
+    ]
+  },
+  {
+    "id": 18,
+    "name": "bp-pxbarre",
+    "image": "bp-pxbarre.png",
+    "categoryId": 1,
+    "shopIds": [
+      1
+    ]
+  },
+  {
+    "id": 19,
+    "name": "bp-ppn",
+    "image": "bp-ppn.png",
+    "categoryId": 1,
+    "shopIds": [
+      1
+    ]
+  },
+  {
+    "id": 20,
+    "name": "bp-carte",
+    "image": "bp-carte.png",
+    "categoryId": 1,
+    "shopIds": [
+      1
+    ]
+  },
+  {
+    "id": 21,
+    "name": "bp-fidelite",
+    "image": "bp-fidelite.png",
+    "categoryId": 1,
+    "shopIds": [
+      1
+    ]
+  },
+  {
+    "id": 22,
+    "name": "fs-crf-basic",
+    "image": "fs-crf-basic.png",
+    "categoryId": 3,
+    "shopIds": [
+      1
+    ]
+  },
+  {
+    "id": 23,
+    "name": "fs-pxbarre",
+    "image": "fs-pxbarre.png",
+    "categoryId": 3,
+    "shopIds": [
+      1
+    ]
+  },
+  {
+    "id": 24,
+    "name": "best-deal-prix-standard",
+    "image": "best-deal-prix-standard.png",
+    "categoryId": 2,
+    "shopIds": [
+      2
+    ]
+  },
+  {
+    "id": 25,
+    "name": "best-deal-prix-barre",
+    "image": "best-deal-prix-barre.png",
+    "categoryId": 2,
+    "shopIds": [
+      2
+    ]
+  },
+  {
+    "id": 26,
+    "name": "fin-serie-prix-standard",
+    "image": "fin-serie-prix-standard.png",
+    "categoryId": 4,
+    "shopIds": [
+      2
+    ]
+  },
+  {
+    "id": 27,
+    "name": "fin-serie-prix-barre",
+    "image": "fin-serie-prix-barre.png",
+    "categoryId": 4,
+    "shopIds": [
+      2
+    ]
+  }
+]
