@@ -2,11 +2,9 @@
   {
     "id": 1,
     "name": "Bon plan",
-    "image": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
+    "image": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
     "icon": "fas fa-gift",
-    "shopIds": [
-      1
-    ],
+    "shopIds": [1],
     "canvasId": 1,
     "canvas": [
       {
@@ -15,8 +13,8 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/1/bonPlan.png",
-        "srcRglt": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/1/bonPlan.png",
+        "srcRglt": "${BASE_URL}/uploads/bonPlanReglette.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -33,10 +31,8 @@
     "id": 2,
     "name": "Best Deal",
     "icon": "fas fa-award",
-    "image": "http://localhost:8081/uploads/categories/headerPictures/2/bestDeal.png",
-    "shopIds": [
-      2
-    ],
+    "image": "${BASE_URL}/uploads/categories/headerPictures/2/bestDeal.png",
+    "shopIds": [2],
     "canvasId": 2,
     "canvas": [
       {
@@ -45,7 +41,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/2/bestDeal.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/2/bestDeal.png",
         "srcRglt": null,
         "backgroundColor": "#000000"
       },
@@ -63,10 +59,8 @@
     "id": 3,
     "name": "Fin de série",
     "icon": "fas fa-bolt",
-    "image": "http://localhost:8081/uploads/categories/headerPictures/3/FinDeSerie.png",
-    "shopIds": [
-      1
-    ],
+    "image": "${BASE_URL}/uploads/categories/headerPictures/3/FinDeSerie.png",
+    "shopIds": [1],
     "canvasId": 3,
     "canvas": [
       {
@@ -75,7 +69,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/3/FinDeSerie.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/3/FinDeSerie.png",
         "srcRglt": null,
         "backgroundColor": "#EB0023"
       },
@@ -93,10 +87,8 @@
     "id": 4,
     "name": "Fin de série",
     "icon": "fas fa-bolt",
-    "image": "http://localhost:8081/uploads/categories/headerPictures/4/FinDeSerie.png",
-    "shopIds": [
-      2
-    ],
+    "image": "${BASE_URL}/uploads/categories/headerPictures/4/FinDeSerie.png",
+    "shopIds": [2],
     "canvasId": 4,
     "canvas": [
       {
@@ -105,7 +97,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "src": "http://localhost:8081/uploads/categories/headerPictures/4/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/categories/headerPictures/4/finDeSerie.png",
         "srcRglt": null,
         "backgroundColor": "#000000"
       },

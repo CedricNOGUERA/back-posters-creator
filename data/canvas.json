@@ -10,8 +10,8 @@
         "width": 500,
         "height": 125,
         "elements": [],
-        "src": "http://localhost:8081/uploads/bonPlan.png",
-        "srcRglt": "http://localhost:8081/uploads/bonPlanReglette.png",
+        "src": "${BASE_URL}/uploads/bonPlan.png",
+        "srcRglt": "${BASE_URL}/uploads/bonPlanReglette.png",
         "backgroundColor": "#EB0023"
       },
       {
@@ -35,7 +35,7 @@
         "width": 500,
         "height": 125,
         "elements": [],
-        "src": "http://localhost:8081/uploads/bestDeal.png",
+        "src": "${BASE_URL}/uploads/bestDeal.png",
         "srcRglt": null,
         "backgroundColor": "#000000"
       },
@@ -60,7 +60,7 @@
         "width": 500,
         "height": 125,
         "elements": [],
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "srcRglt": null,
         "backgroundColor": "#EB0023"
       },
@@ -85,7 +85,7 @@
         "width": 500,
         "height": 125,
         "elements": [],
-        "src": "http://localhost:8081/uploads/finDeSerie.png",
+        "src": "${BASE_URL}/uploads/finDeSerie.png",
         "srcRglt": null,
         "backgroundColor": "#000000"
       },
@@ -110,7 +110,7 @@
         "width": 500,
         "height": 125,
         "elements": [],
-        "src": "http://localhost:8081/uploads/50Sur2.png",
+        "src": "${BASE_URL}/uploads/50Sur2.png",
         "srcRglt": null,
         "backgroundColor": "#fc1c03"
       },
