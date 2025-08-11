@@ -4,10 +4,16 @@
     "email": "cedric.noguera@lwane.com",
     "passwordHash": "$2b$10$wKtv9zultlETNc7F5ro9COEtsesD/A/ZxUDaTvNbq8yTVhxtWLjTW",
     "name": "Cédric",
-    "company": {
-      "idCompany": 1,
-      "nameCompany": "Carrefour"
-    },
+    "company": [
+      {
+        "idCompany": 1,
+        "nameCompany": "Carrefour"
+      },
+      {
+        "nameCompany": "Média Nui",
+        "idCompany": 2
+      }
+    ],
     "role": "super_admin"
   },
   {
@@ -15,10 +21,12 @@
     "email": "rudolph@mail.com",
     "passwordHash": "$2b$10$cpglq1lmdxyQLFojutWf.uKvPQfMcCI52KZOxxvkcREBZN9QJoHW.",
     "name": "Rudolph",
-    "company": {
-      "idCompany": 1,
-      "nameCompany": "Carrefour"
-    },
+    "company": [
+      {
+        "idCompany": 1,
+        "nameCompany": "Carrefour"
+      }
+    ],
     "role": "super_admin"
   },
   {
@@ -26,10 +34,12 @@
     "email": "fabrice.folituu@lwane.com",
     "passwordHash": "$2b$10$FJUj.SHcoombxT0U2b9Q7eMKzm4rTiZ0rT8uY1V05iTTju7mc/rBq",
     "name": "Fabrice",
-    "company": {
-      "idCompany": 1,
-      "nameCompany": "Carrefour"
-    },
+    "company": [
+      {
+        "idCompany": 1,
+        "nameCompany": "Carrefour"
+      }
+    ],
     "role": "super_admin"
   },
   {
@@ -37,10 +47,42 @@
     "email": "greg@mail.pf",
     "passwordHash": "$2b$10$QDDHnb0U.TaFaf1ZO.n6x.yvOAnIpiZ.t712qeNJi9g2IU6daBvlu",
     "name": "Greg",
-    "company": {
-      "idCompany": 2,
-      "nameCompany": "Média Nui"
-    },
+    "company": [
+      {
+        "idCompany": 2,
+        "nameCompany": "Média Nui"
+      }
+    ],
     "role": "user"
+  },
+  {
+    "id": 6,
+    "email": "fred@mail.pf",
+    "passwordHash": "$2b$10$NP7yR75lZOActuE2Ed4NXOe.BCGN5LTaAYw6AxkBR.aFhqo/ICtA6",
+    "name": "Fred",
+    "company": [
+      {
+        "nameCompany": "Carrefour",
+        "idCompany": 1
+      },
+      {
+        "nameCompany": "Média Nui",
+        "idCompany": 2
+      }
+    ],
+    "role": "super_admin"
+  },
+  {
+    "id": 7,
+    "email": "gg@mail.pf",
+    "passwordHash": "$2b$10$tOh78e5FDolK8hXCcwhAF.FcpdvhJLtjwz2UsV2/fduPA6pep08zu",
+    "name": "Gérard",
+    "company": [
+      {
+        "nameCompany": "Média Nui",
+        "idCompany": 2
+      }
+    ],
+    "role": "admin"
   }
 ]

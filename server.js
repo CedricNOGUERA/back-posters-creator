@@ -35,7 +35,7 @@ fs.mkdirSync(UPLOAD_BASE_DIR, { recursive: true }); // S'assurer que le dossier 
 const JWT_SECRET =
   process.env.JWT_SECRET || "K8v$3nPz!xR7@qL2#fW9^mT1&uY6*eB0ZsJhC4gX";
 
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 8080;
 
 // Log pour vérifier que les variables d'environnement sont bien lues
 console.log("🔧 Variables d'environnement:");
