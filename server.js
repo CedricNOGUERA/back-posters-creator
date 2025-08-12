@@ -1280,7 +1280,8 @@ app.post(
           await fsp.mkdir(finalDestDir, { recursive: true });
           await fsp.rename(mainImageFile.path, finalPath);
           console.log(`Image principale déplacée vers: ${finalPath}`);
-          imagePathForDb = `${process.env.BASE_URL}uploads/categories/headerPictures/${nextId}/${originalName}`;
+          // imagePathForDb = `${process.env.BASE_URL}uploads/categories/headerPictures/${nextId}/${originalName}`;
+          imagePathForDb = `/uploads/categories/headerPictures/${nextId}/${originalName}`;
           newEntry.image = imagePathForDb;
           newEntry.canvas[0].src = imagePathForDb;
         } catch (moveError) {
@@ -1322,7 +1323,8 @@ app.post(
           await fsp.mkdir(finalDestDir, { recursive: true });
           await fsp.rename(rgltImageFile.path, finalPathRglt);
           console.log(`Image Rglt déplacée vers: ${finalPathRglt}`);
-          imageRgltPathForDb = `${process.env.BASE_URL}uploads/categories/headerPictures/${nextId}/${originalNameRglt}`;
+          // imageRgltPathForDb = `${process.env.BASE_URL}uploads/categories/headerPictures/${nextId}/${originalNameRglt}`;
+          imageRgltPathForDb = `/uploads/categories/headerPictures/${nextId}/${originalNameRglt}`;
           newEntry.imageRglt = imageRgltPathForDb;
           newEntry.canvas[0].srcRglt = imageRgltPathForDb;
         } catch (moveError) {

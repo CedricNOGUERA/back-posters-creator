@@ -3,8 +3,13 @@
     "id": 1,
     "name": "Bon plan",
     "image": "/uploads/categories/headerPictures/1/bonPlan.png",
-    "icon": "fas fa-gift",
-    "shopIds": [1],
+    "icon": {
+      "name": "Cadeau",
+      "value": "fas fa-gift"
+    },
+    "shopIds": [
+      1
+    ],
     "canvasId": 1,
     "canvas": [
       {
@@ -30,9 +35,14 @@
   {
     "id": 2,
     "name": "Best Deal",
-    "icon": "fas fa-award",
+    "icon": {
+      "name": "Médaille",
+      "value": "fas fa-award"
+    },
     "image": "/uploads/categories/headerPictures/2/bestDeal.png",
-    "shopIds": [2],
+    "shopIds": [
+      2
+    ],
     "canvasId": 2,
     "canvas": [
       {
@@ -58,9 +68,14 @@
   {
     "id": 3,
     "name": "Fin de série",
-    "icon": "fas fa-bolt",
+    "icon": {
+      "name": "Eclair",
+      "value": "fas fa-bolt"
+    },
     "image": "/uploads/categories/headerPictures/3/FinDeSerie.png",
-    "shopIds": [1],
+    "shopIds": [
+      1
+    ],
     "canvasId": 3,
     "canvas": [
       {
@@ -86,9 +101,14 @@
   {
     "id": 4,
     "name": "Fin de série",
-    "icon": "fas fa-bolt",
+    "icon": {
+      "name": "Eclair",
+      "value": "fas fa-bolt"
+    },
     "image": "/uploads/categories/headerPictures/4/FinDeSerie.png",
-    "shopIds": [2],
+    "shopIds": [
+      2
+    ],
     "canvasId": 4,
     "canvas": [
       {
