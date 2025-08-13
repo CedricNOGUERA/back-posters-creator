@@ -432,6 +432,21 @@ const storageAddModel = multer.diskStorage({
 
 const uploadAddModel = multer({ storage: storageAddModel });
 
+// Configuration multer pour la modification des miniatures
+const storageUpdateThumbnail = multer.diskStorage({
+  destination: function (req, file, cb) {
+    // Le categoryId n'est pas encore connu ici, donc on utilise temporairement './uploads/tmp'
+    const tempDir = path.join(__dirname, "uploads", "tmp");
+    fs.mkdirSync(tempDir, { recursive: true });
+    cb(null, tempDir);
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  },
+});
+
+const uploadUpdateThumbnail = multer({ storage: storageUpdateThumbnail });
+
 // Route combinée pour ajout modèle + upload miniature +  ajout template
 app.post("/api/add-model", uploadAddModel.single("image"), (req, res) => {
   const dataPath = path.join(__dirname, "data", "model.json");
@@ -629,6 +644,103 @@ app.patch("/api/patch-models/:id", (req, res) => {
   } catch (error) {
     console.error("Erreur lors du patch du modèle :", error);
     res.status(500).json({ error: "Impossible de patcher le modèle" });
+  }
+});
+
+// Route pour modifier la miniature d'un template
+app.patch("/api/template/:id/thumbnail/:name", uploadUpdateThumbnail.single("image"), async (req, res) => {
+  const categoryId = parseInt(req.params.id);
+  const imageName = req.params.name; // Traité comme une chaîne, pas converti en entier
+  
+  if (!req.file) {
+    return res.status(400).json({ error: "Aucune image fournie" });
+  }
+
+  try {
+    // Lire les données du template
+    const templatesData = await fsp.readFile(TEMPLATES_FILE, "utf8");
+    const templates = JSON.parse(templatesData);
+    
+    const templateIndex = templates.findIndex((template) => template.categoryId === categoryId && template.image === imageName);
+    if (templateIndex === -1) {
+      return res.status(404).json({ error: "Template non trouvé" });
+    }
+    
+    const template = templates[templateIndex];
+    
+    // Lire les données des images template
+    const imagesTemplateData = await fsp.readFile(IMAGES_TEMPLATE_FILE, "utf8");
+    const imagesTemplates = JSON.parse(imagesTemplateData);
+    
+    // Trouver l'ancienne image template associée
+    const oldImageTemplate = imagesTemplates.find(
+      (img) => img.templateId === template.id && img.name === template.image
+    );
+    
+    // Créer le dossier de destination pour la nouvelle miniature
+    const destDir = path.join(
+      __dirname,
+      "uploads",
+      "miniatures",
+      String(template.categoryId)
+    );
+    fs.mkdirSync(destDir, { recursive: true });
+    
+    // Chemin de l'ancienne image (pour l'écraser)
+    const oldImagePath = path.join(destDir, template.image);
+    
+    // Déplacer la nouvelle image (écrase l'ancienne si elle existe)
+    const destPath = path.join(destDir, req.file.originalname);
+    await fsp.rename(req.file.path, destPath);
+    
+    // Mettre à jour le nom de l'image dans le template
+    const oldImageName = template.image;
+    templates[templateIndex].image = req.file.originalname;
+    
+    // Mettre à jour le fichier templates.json
+    await fsp.writeFile(TEMPLATES_FILE, JSON.stringify(templates, null, 2));
+    
+    // Mettre à jour ou créer l'entrée dans imagesTemplate.json
+    if (oldImageTemplate) {
+      // Mettre à jour l'entrée existante
+      oldImageTemplate.name = req.file.originalname;
+    } else {
+      // Créer une nouvelle entrée
+      const lastImageId = imagesTemplates.reduce(
+        (maxId, item) => Math.max(maxId, item.id),
+        0
+      );
+      const newImageData = {
+        id: lastImageId + 1,
+        name: req.file.originalname,
+        templateId: template.id,
+      };
+      imagesTemplates.push(newImageData);
+    }
+    
+    // Sauvegarder imagesTemplate.json
+    await fsp.writeFile(IMAGES_TEMPLATE_FILE, JSON.stringify(imagesTemplates, null, 2));
+    
+    res.json({
+      message: "Miniature modifiée avec succès",
+      template: templates[templateIndex],
+      thumbnail: `/uploads/miniatures/${template.categoryId}/${req.file.originalname}`,
+      oldImage: oldImageName
+    });
+    
+  } catch (error) {
+    console.error("Erreur lors de la modification de la miniature :", error);
+    
+    // Nettoyer le fichier temporaire en cas d'erreur
+    if (req.file) {
+      try {
+        await fsp.unlink(req.file.path);
+      } catch (cleanupError) {
+        console.warn("Erreur lors du nettoyage du fichier temporaire:", cleanupError);
+      }
+    }
+    
+    res.status(500).json({ error: "Impossible de modifier la miniature" });
   }
 });
 
