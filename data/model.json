@@ -10292,87 +10292,6 @@
     "updatedAt": "2023-10-26T10:03:00Z"
   },
   {
-    "id": 8,
-    "templateId": 17,
-    "categoryId": 5,
-    "dimensionId": 9,
-    "canvas": [
-      {
-        "type": "header",
-        "top": 0,
-        "left": 0,
-        "width": 500,
-        "height": 142.85714285714286,
-        "src": "/uploads/50Sur2.png",
-        "backgroundColor": "#fc1c03"
-      },
-      {
-        "type": "background-color",
-        "top": 142.85714285714286,
-        "left": 0,
-        "width": 500,
-        "height": 357.14285714285717,
-        "backgroundColor": "#ffea00"
-      },
-      {
-        "type": "price",
-        "bottom": 90.796875,
-        "right": 0,
-        "width": 100,
-        "text": "1000",
-        "fontSize": 136,
-        "fontWeight": 1000,
-        "color": "#0011ff",
-        "rotation": 0,
-        "textDecoration": "none"
-      },
-      {
-        "type": "text",
-        "top": 382.203125,
-        "left": 9.59375,
-        "text": "Carton Cup Nouilles",
-        "fontFamily": "Mulish",
-        "fontSize": 19,
-        "fontWeight": 900,
-        "color": "#000000",
-        "rotation": 0
-      },
-      {
-        "type": "text",
-        "top": 412.203125,
-        "left": 9.59375,
-        "text": "NONGHIM",
-        "fontFamily": "Mulish",
-        "fontSize": 16,
-        "fontWeight": 900,
-        "color": "#000000",
-        "rotation": 0
-      },
-      {
-        "type": "text",
-        "top": 431.203125,
-        "left": 8.59375,
-        "fontFamily": "Mulish",
-        "text": "Boeuf",
-        "fontSize": 16,
-        "fontWeight": 700,
-        "color": "#000000",
-        "rotation": 0
-      },
-      {
-        "type": "text",
-        "top": 452.203125,
-        "left": 6.59375,
-        "text": "12x175g",
-        "fontFamily": "Mulish",
-        "fontSize": 16,
-        "fontWeight": 400,
-        "color": "#000000",
-        "rotation": 0
-      }
-    ]
-  },
-  {
     "id": 93,
     "templateId": 22,
     "categoryId": 1,
@@ -15853,7 +15772,7 @@
         "top": 142.85714285714286,
         "left": 0,
         "width": 500,
-        "height": 357.14285714285717,
+        "height": 357.1428571428571,
         "backgroundColor": "#ffea00"
       },
       {

@@ -1508,6 +1508,7 @@ app.post(
   }
 );
 
+
 // Route pour modifier une catégorie
 app.patch("/api/categories/:id", authenticateToken, async (req, res) => {
   if (req.user.role !== "super_admin") {
@@ -1517,7 +1518,7 @@ app.patch("/api/categories/:id", authenticateToken, async (req, res) => {
   }
 
   const categoryIdToUpdate = parseInt(req.params.id, 10);
-  const updates = req.body;
+  const updates = JSON.parse(req.body.data);
 
   if (isNaN(categoryIdToUpdate)) {
     return res.status(400).json({ message: "ID de catégorie invalide." });

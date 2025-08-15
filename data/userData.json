@@ -84,5 +84,52 @@
       }
     ],
     "role": "admin"
+  },
+  {
+    "id": 8,
+    "email": "ivonne.suarez@lwane.com",
+    "passwordHash": "$2a$10$bqrYOANC.afzSizcKJ3CQuRHFHguccBQ9OUT5Ye5M9sLZ6y.5cyDe",
+    "name": "Ivonne",
+    "company": [
+      {
+        "nameCompany": "Carrefour",
+        "idCompany": 1
+      },
+      {
+        "nameCompany": "Média Nui",
+        "idCompany": 2
+      }
+    ],
+    "role": "super_admin"
+  },
+  {
+    "id": 9,
+    "email": "maiarii.changuy@lwane.com",
+    "passwordHash": "$2a$10$R4XmrP0f8Lz.KRnZg5EtEuLkz1gGtYEXw2UF1if9tq9wh8kz1GLya",
+    "name": "Maiarii",
+    "company": [
+      {
+        "nameCompany": "Carrefour",
+        "idCompany": 1
+      },
+      {
+        "nameCompany": "Média Nui",
+        "idCompany": 2
+      }
+    ],
+    "role": "super_admin"
+  },
+  {
+    "id": 10,
+    "email": "fareahu.teaha@lwane.com",
+    "passwordHash": "$2a$10$e11NZnmD60iEW5/P8oEBeeeTa0QQghQacg4FAJshPVVx3RWUrpt52",
+    "name": "Fareahu",
+    "company": [
+      {
+        "nameCompany": "Carrefour",
+        "idCompany": 1
+      }
+    ],
+    "role": "admin"
   }
 ]
