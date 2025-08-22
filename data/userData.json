@@ -2,7 +2,7 @@
   {
     "id": 1,
     "email": "cedric.noguera@lwane.com",
-    "passwordHash": "$2b$10$wKtv9zultlETNc7F5ro9COEtsesD/A/ZxUDaTvNbq8yTVhxtWLjTW",
+    "passwordHash": "$2a$10$wQRJJJkcWqKGob3UljeZQO0pgVKb03WDn.9gEOY8YdZ.FiIsi3fSG",
     "name": "Cédric",
     "company": [
       {
@@ -79,6 +79,10 @@
     "name": "Gérard",
     "company": [
       {
+        "nameCompany": "Carrefour",
+        "idCompany": 1
+      },
+      {
         "nameCompany": "Média Nui",
         "idCompany": 2
       }
@@ -128,6 +132,23 @@
       {
         "nameCompany": "Carrefour",
         "idCompany": 1
+      }
+    ],
+    "role": "admin"
+  },
+  {
+    "id": 11,
+    "email": "mahana.brothers@lwane.com",
+    "passwordHash": "$2a$10$DoZHSYuiuPgdXqhm0c56TuhSmrpWUnvOaBjTDM.yTZ7oArZ/kPpI6",
+    "name": "Mahana",
+    "company": [
+      {
+        "nameCompany": "Carrefour",
+        "idCompany": 1
+      },
+      {
+        "nameCompany": "Média Nui",
+        "idCompany": 2
       }
     ],
     "role": "admin"
