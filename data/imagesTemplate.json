@@ -133,5 +133,20 @@
     "id": 27,
     "name": "fin-serie-prix-barre.png",
     "templateId": 27
+  },
+  {
+    "id": 28,
+    "name": "bf-basic.png",
+    "templateId": 28
+  },
+  {
+    "id": 29,
+    "name": "bf-50-sur-2.png",
+    "templateId": 29
+  },
+  {
+    "id": 30,
+    "name": "test.png",
+    "templateId": 28
   }
 ]

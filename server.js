@@ -1641,11 +1641,104 @@ app.delete("/api/categories/:id", authenticateToken, async (req, res) => {
 
     const categoryToDelete = categories[categoryIndex]; // Récupérer l'objet catégorie
 
+    // Supprimer tous les modèles associés à cette catégorie
+    try {
+      const modelsData = await fsp.readFile(MODELS_FILE, "utf8");
+      const models = JSON.parse(modelsData);
+      
+      // Filtrer les modèles à supprimer
+      const modelsToDelete = models.filter(m => m.categoryId === categoryIdToDelete);
+      const remainingModels = models.filter(m => m.categoryId !== categoryIdToDelete);
+      
+      // Supprimer les miniatures des modèles supprimés
+      for (const model of modelsToDelete) {
+        if (model.image && model.categoryId) {
+          const imagePath = path.join(
+            __dirname,
+            "uploads",
+            "miniatures",
+            String(model.categoryId),
+            model.image
+          );
+          try {
+            await fsp.unlink(imagePath);
+            console.log(`Miniature supprimée: ${imagePath}`);
+          } catch (unlinkError) {
+            if (unlinkError.code !== "ENOENT") {
+              console.warn(`Erreur lors de la suppression de la miniature ${imagePath}:`, unlinkError);
+            }
+          }
+        }
+      }
+      
+      // Sauvegarder la liste des modèles mise à jour
+      await fsp.writeFile(MODELS_FILE, JSON.stringify(remainingModels, null, 2));
+      console.log(`${modelsToDelete.length} modèles supprimés pour la catégorie ${categoryIdToDelete}`);
+      
+    } catch (e) {
+      if (e.code !== "ENOENT") {
+        console.warn("Erreur lors de la suppression des modèles associés:", e);
+      }
+    }
+
+    // Supprimer tous les templates associés à cette catégorie
+    try {
+      const templatesData = await fsp.readFile(TEMPLATES_FILE, "utf8");
+      const templates = JSON.parse(templatesData);
+      
+      // Filtrer les templates à supprimer
+      const templatesToDelete = templates.filter(t => t.categoryId === categoryIdToDelete);
+      const remainingTemplates = templates.filter(t => t.categoryId !== categoryIdToDelete);
+      
+      // Sauvegarder la liste des templates mise à jour
+      await fsp.writeFile(TEMPLATES_FILE, JSON.stringify(remainingTemplates, null, 2));
+      console.log(`${templatesToDelete.length} templates supprimés pour la catégorie ${categoryIdToDelete}`);
+      
+    } catch (e) {
+      if (e.code !== "ENOENT") {
+        console.warn("Erreur lors de la suppression des templates associés:", e);
+      }
+    }
+
+    // Supprimer toutes les entrées imageTemplate associées aux templates supprimés
+    try {
+      const imagesTemplateData = await fsp.readFile(IMAGES_TEMPLATE_FILE, "utf8");
+      const imagesTemplates = JSON.parse(imagesTemplateData);
+      
+      // Récupérer les IDs des templates supprimés pour identifier les imageTemplate à supprimer
+      let templatesToDeleteIds = [];
+      try {
+        const templatesData = await fsp.readFile(TEMPLATES_FILE, "utf8");
+        const allTemplates = JSON.parse(templatesData);
+        templatesToDeleteIds = allTemplates
+          .filter(t => t.categoryId === categoryIdToDelete)
+          .map(t => t.id);
+      } catch (e) {
+        // Si on ne peut pas lire les templates, on utilise une approche différente
+        // On supprime les imageTemplate qui ont des noms correspondant aux modèles supprimés
+      }
+      
+      // Supprimer les imageTemplate associés aux templates de cette catégorie
+      const remainingImagesTemplates = imagesTemplates.filter(it => 
+        !templatesToDeleteIds.includes(it.templateId)
+      );
+      
+      if (remainingImagesTemplates.length < imagesTemplates.length) {
+        await fsp.writeFile(IMAGES_TEMPLATE_FILE, JSON.stringify(remainingImagesTemplates, null, 2));
+        console.log(`${imagesTemplates.length - remainingImagesTemplates.length} entrées imageTemplate supprimées`);
+      }
+      
+    } catch (e) {
+      if (e.code !== "ENOENT") {
+        console.warn("Erreur lors de la suppression des imageTemplate associés:", e);
+      }
+    }
+
+    // Supprimer la catégorie
     categories.splice(categoryIndex, 1);
     await fsp.writeFile(CATEGORIES_FILE, JSON.stringify(categories, null, 2));
 
-    // Supprimer le dossier des images d'en-tête de catégorie (nouvelle logique)
-    // Ce dossier contient potentiellement image et imageRglt
+    // Supprimer le dossier des images d'en-tête de catégorie
     const categoryHeaderPath = path.join(
       UPLOAD_BASE_DIR,
       "categories",
@@ -1659,7 +1752,6 @@ app.delete("/api/categories/:id", authenticateToken, async (req, res) => {
       );
     } catch (rmError) {
       if (rmError.code !== "ENOENT") {
-        // Ne pas avertir si le dossier n'existait simplement pas
         console.warn(
           `Erreur lors de la suppression du dossier ${categoryHeaderPath}:`,
           rmError
@@ -1667,14 +1759,13 @@ app.delete("/api/categories/:id", authenticateToken, async (req, res) => {
       }
     }
 
-    // Aussi, supprimer le dossier de miniatures de catégorie s'il existe (uploads/miniatures/{categoryId}) - Cela semble lié aux modèles, pas directement aux catégories ? À vérifier.
+    // Supprimer le dossier de miniatures de catégorie
     const categoryMiniaturesPath = path.join(
       __dirname,
       "uploads",
       "miniatures",
       String(categoryIdToDelete)
     );
-    // Restore the try...catch block for removing miniatures directory
     try {
       await fsp.rm(categoryMiniaturesPath, { recursive: true, force: true });
       console.log(
@@ -1682,7 +1773,6 @@ app.delete("/api/categories/:id", authenticateToken, async (req, res) => {
       );
     } catch (rmError) {
       if (rmError.code !== "ENOENT") {
-        // Ne pas avertir si le dossier n'existait simplement pas
         console.warn(
           `Erreur lors de la suppression du dossier de miniatures ${categoryMiniaturesPath}:`,
           rmError
@@ -1690,7 +1780,32 @@ app.delete("/api/categories/:id", authenticateToken, async (req, res) => {
       }
     }
 
-    res.json({ message: "Catégorie supprimée avec succès." });
+    // Supprimer le dossier des images de catégorie
+    const categoryImagesPath = path.join(
+      UPLOAD_BASE_DIR,
+      "categories",
+      "images",
+      String(categoryIdToDelete)
+    );
+    try {
+      await fsp.rm(categoryImagesPath, { recursive: true, force: true });
+      console.log(
+        `Dossier d'images de catégorie supprimé: ${categoryImagesPath}`
+      );
+    } catch (rmError) {
+      if (rmError.code !== "ENOENT") {
+        console.warn(
+          `Erreur lors de la suppression du dossier d'images ${categoryImagesPath}:`,
+          rmError
+        );
+      }
+    }
+
+    res.json({ 
+      message: "Catégorie et tous ses éléments associés supprimés avec succès.",
+      deletedModels: modelsToDelete?.length || 0,
+      deletedTemplates: templatesToDelete?.length || 0
+    });
   } catch (error) {
     console.error(
       `Erreur lors de la suppression de la catégorie ${categoryIdToDelete}:`,

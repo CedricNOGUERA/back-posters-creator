@@ -551,69 +551,37 @@
     "dimensionId": 9,
     "canvas": [
       {
-        "type": "background-color",
+        "type": "header",
         "top": 0,
         "left": 0,
         "width": 500,
-        "height": 125,
-        "backgroundColor": "#C20016"
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/1/bonPlan.png",
+        "backgroundColor": "#EB0023"
       },
       {
         "type": "background-color",
-        "top": 125,
+        "top": 142.85714285714286,
         "left": 0,
         "width": 500,
-        "height": 375,
-        "backgroundColor": "#ff0"
+        "height": 357.14285714285717,
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
-        "top": 37,
-        "left": 31,
-        "src": "/uploads/categories/headerPictures/1/bonPlan.png",
-        "width": 425,
-        "height": 62.5
+        "top": 221.109375,
+        "left": 28.59375,
+        "width": 150,
+        "height": "auto",
+        "src": "/uploads/categories/images/1/redBlock_reglette.png"
       },
       {
-        "type": "price",
-        "bottom": 186.03125,
-        "right": 0,
-        "text": "19 000",
-        "fontSize": 100,
-        "fontWeight": 400,
-        "color": "#000000",
-        "rotation": 0,
-        "textDecoration": "none"
-      },
-      {
-        "type": "text",
-        "top": 331.96875,
-        "left": 36,
-        "text": "Mon produit",
-        "fontSize": 24,
-        "fontWeight": 400,
-        "color": "#000000",
-        "rotation": 0
-      },
-      {
-        "type": "text",
-        "top": 361.96875,
-        "left": 36,
-        "text": "Une description",
-        "fontSize": 20,
-        "fontWeight": 400,
-        "color": "#000000",
-        "rotation": 0
-      },
-      {
-        "type": "text",
-        "top": 389.96875,
-        "left": 36,
-        "text": "Soit 10F le kg.",
-        "fontSize": 16,
-        "fontWeight": 400,
-        "color": "#000000",
-        "rotation": 0
+        "type": "image",
+        "top": 179.109375,
+        "left": 248.59375,
+        "width": 150,
+        "height": "auto",
+        "src": "/uploads/categories/images/1/REMISE-IMMEDIATE.png"
       }
     ],
     "createdAt": "2023-10-26T10:03:00Z",
