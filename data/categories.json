@@ -130,5 +130,39 @@
         "backgroundColor": "#ffea00"
       }
     ]
+  },
+  {
+    "id": 5,
+    "name": "toastes",
+    "image": "/uploads/categories/headerPictures/5/REMISE-IMMEDIATE.png",
+    "imageRglt": "/uploads/categories/headerPictures/5/bonPlanReglette.png",
+    "icon": {
+      "name": "Cœur",
+      "value": "fa fa-heart"
+    },
+    "shopIds": [
+      1
+    ],
+    "canvasId": 5,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 125,
+        "src": "/uploads/categories/headerPictures/5/REMISE-IMMEDIATE.png",
+        "srcRglt": "/uploads/categories/headerPictures/5/bonPlanReglette.png",
+        "backgroundColor": "#ae00ff"
+      },
+      {
+        "type": "background-color",
+        "top": 125,
+        "left": 0,
+        "width": 500,
+        "height": 375,
+        "backgroundColor": "#ffea00"
+      }
+    ]
   }
 ]

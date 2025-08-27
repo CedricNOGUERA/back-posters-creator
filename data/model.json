@@ -20787,5 +20787,151 @@
         "rotation": 0
       }
     ]
+  },
+  {
+    "id": 216,
+    "templateId": 28,
+    "categoryId": 5,
+    "dimensionId": 2,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 750,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/5/REMISE-IMMEDIATE.png",
+        "backgroundColor": "#ae00ff"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 750,
+        "height": 357.1428571428571,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "text",
+        "top": 338.203125,
+        "left": 374.59375,
+        "text": "Texte par défaut",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 374.203125,
+        "left": 14.59375,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 398.203125,
+        "left": 14.59375,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 417.203125,
+        "left": 14.59375,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 438.203125,
+        "left": 12.59375,
+        "text": "12x175g",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": 217,
+    "templateId": 28,
+    "categoryId": 5,
+    "dimensionId": 9,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/5/REMISE-IMMEDIATE.png",
+        "backgroundColor": "#ae00ff"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 500,
+        "height": 357.1428571428571,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "text",
+        "top": 280.203125,
+        "left": 102.59375,
+        "text": "Yala",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "verticalLine",
+        "top": 268.703125,
+        "left": 281.234375,
+        "height": 200,
+        "color": "#000000",
+        "thickness": 2
+      },
+      {
+        "type": "price",
+        "bottom": 99.296875,
+        "right": 284.765625,
+        "width": 100,
+        "text": "1000",
+        "fontFamily": "Impact",
+        "fontSize": 50,
+        "fontWeight": 1000,
+        "color": "#000000",
+        "rotation": 0,
+        "textDecoration": "none"
+      },
+      {
+        "type": "enableText",
+        "top": 248.203125,
+        "left": 289.203125,
+        "text": "Texte qui ne <sup>change </sup>pas",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      }
+    ]
   }
 ]

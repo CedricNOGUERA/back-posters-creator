@@ -85,16 +85,29 @@ function requireRole(role) {
 }
 
 function authenticateToken(req, res, next) {
+  console.log("🔐 Middleware d'authentification appelé");
+  console.log("📋 Headers:", req.headers);
+  
   const token = req.headers["authorization"]?.split(" ")[1];
-  if (!token) return res.sendStatus(401);
+  if (!token) {
+    console.log("❌ Aucun token fourni");
+    return res.sendStatus(401);
+  }
 
   jwt.verify(token, JWT_SECRET, (err, decoded) => {
-    if (err) return res.sendStatus(403);
+    if (err) {
+      console.log("❌ Token invalide:", err.message);
+      return res.sendStatus(403);
+    }
 
     const users = JSON.parse(fs.readFileSync(USERS_FILE, "utf8"));
     const user = users.find((u) => u.id === decoded.id);
-    if (!user) return res.sendStatus(404);
+    if (!user) {
+      console.log("❌ Utilisateur non trouvé");
+      return res.sendStatus(404);
+    }
 
+    console.log("✅ Authentification réussie pour l'utilisateur:", user.email);
     req.user = user;
     next();
   });
@@ -1199,14 +1212,17 @@ const uploadCategoryFiles = multer({
   storage: categoryHeaderStorage,
   limits: { fileSize: 5 * 1024 * 1024 }, // Limite de 5MB par fichier
   fileFilter: function (req, file, cb) {
+    console.log("🔍 Filtrage du fichier:", file.originalname, file.mimetype);
     const filetypes = /jpeg|jpg|png|gif|webp/;
     const mimetype = filetypes.test(file.mimetype);
     const extname = filetypes.test(
       path.extname(file.originalname).toLowerCase()
     );
     if (mimetype && extname) {
+      console.log("✅ Fichier accepté:", file.originalname);
       return cb(null, true);
     }
+    console.log("❌ Fichier rejeté:", file.originalname);
     cb(
       new Error(
         "Erreur : Seules les images (jpeg, jpg, png, gif, webp) sont autorisées !"
@@ -1510,7 +1526,11 @@ app.post(
 
 
 // Route pour modifier une catégorie
-app.patch("/api/categories/:id", authenticateToken, async (req, res) => {
+app.patch("/api/categories/:id", authenticateToken, uploadCategoryFiles, async (req, res) => {
+  console.log("🚀 Route PATCH /api/categories/:id appelée");
+  console.log("📁 Fichiers reçus:", req.files);
+  console.log("📝 Body reçu:", req.body);
+  
   if (req.user.role !== "super_admin") {
     return res
       .status(403)
@@ -1518,13 +1538,22 @@ app.patch("/api/categories/:id", authenticateToken, async (req, res) => {
   }
 
   const categoryIdToUpdate = parseInt(req.params.id, 10);
-  const updates = JSON.parse(req.body.data);
+  let updates;
+  
+  try {
+    updates = JSON.parse(req.body.data);
+  } catch (e) {
+    return res.status(400).json({
+      error: 'Données JSON invalides dans le champ "data".',
+      details: e.message,
+    });
+  }
 
   if (isNaN(categoryIdToUpdate)) {
     return res.status(400).json({ message: "ID de catégorie invalide." });
   }
 
-  if (Object.keys(updates)?.length === 0) {
+  if (Object.keys(updates)?.length === 0 && !req.files) {
     return res
       .status(400)
       .json({ message: "Aucune donnée de mise à jour fournie." });
@@ -1567,30 +1596,205 @@ app.patch("/api/categories/:id", authenticateToken, async (req, res) => {
     const categoryToUpdate = { ...categories[categoryIndex] };
     const allowedFields = [
       "name",
-      "image",
-      "imageRglt",
       "icon",
       "shopIds",
       "canvasId",
       "canvas",
     ];
     let Patcher = false;
+    let imageUpdated = false;
+    let imageRgltUpdated = false;
 
+    // Traiter les champs de données
     for (const field of allowedFields) {
       if (updates.hasOwnProperty(field)) {
-        // TODO: Ajouter des validations plus spécifiques par champ si nécessaire
-        // Par exemple, vérifier que shopIds est un tableau, canvasId est un nombre, etc.
         categoryToUpdate[field] = updates[field];
         Patcher = true;
       }
     }
 
+    // Traiter les fichiers uploadés
+    const finalDestDir = path.join(
+      UPLOAD_BASE_DIR,
+      "categories",
+      "headerPictures",
+      String(categoryIdToUpdate)
+    );
+
+    // Gérer l'image principale si elle a été uploadée
+    if (req.files?.image?.[0]) {
+      const mainImageFile = req.files.image[0];
+      const originalName = mainImageFile.filename
+        .split("-")
+        .slice(1)
+        .join("-")
+        .replace(/\s+/g, "_");
+      
+      try {
+        await fsp.mkdir(finalDestDir, { recursive: true });
+        const finalPath = path.join(finalDestDir, originalName);
+        await fsp.rename(mainImageFile.path, finalPath);
+        
+        const imagePathForDb = `/uploads/categories/headerPictures/${categoryIdToUpdate}/${originalName}`;
+        categoryToUpdate.image = imagePathForDb;
+        
+        // Mettre à jour le canvas de la catégorie si il existe
+        if (categoryToUpdate.canvas && Array.isArray(categoryToUpdate.canvas) && categoryToUpdate.canvas[0]) {
+          categoryToUpdate.canvas[0].src = imagePathForDb;
+        }
+        
+        imageUpdated = true;
+        Patcher = true;
+        console.log(`Image principale mise à jour: ${finalPath}`);
+      } catch (moveError) {
+        console.error("Erreur lors de la mise à jour de l'image principale:", moveError);
+        // Nettoyer le fichier temporaire
+        try {
+          await fsp.unlink(mainImageFile.path);
+        } catch (e) {}
+        return res.status(500).json({
+          error: "Erreur serveur lors de la sauvegarde de l'image principale.",
+        });
+      }
+    }
+
+    // Gérer l'image secondaire si elle a été uploadée
+    if (req.files?.imageRglt?.[0]) {
+      const rgltImageFile = req.files.imageRglt[0];
+      const originalNameRglt = rgltImageFile.filename
+        .split("-")
+        .slice(1)
+        .join("-")
+        .replace(/\s+/g, "_");
+      
+      try {
+        await fsp.mkdir(finalDestDir, { recursive: true });
+        const finalPathRglt = path.join(finalDestDir, originalNameRglt);
+        await fsp.rename(rgltImageFile.path, finalPathRglt);
+        
+        const imageRgltPathForDb = `/uploads/categories/headerPictures/${categoryIdToUpdate}/${originalNameRglt}`;
+        categoryToUpdate.imageRglt = imageRgltPathForDb;
+        
+        // Mettre à jour le canvas de la catégorie si il existe
+        if (categoryToUpdate.canvas && Array.isArray(categoryToUpdate.canvas) && categoryToUpdate.canvas[0]) {
+          categoryToUpdate.canvas[0].srcRglt = imageRgltPathForDb;
+        }
+        
+        imageRgltUpdated = true;
+        Patcher = true;
+        console.log(`Image secondaire mise à jour: ${finalPathRglt}`);
+      } catch (moveError) {
+        console.error("Erreur lors de la mise à jour de l'image secondaire:", moveError);
+        // Nettoyer le fichier temporaire
+        try {
+          await fsp.unlink(rgltImageFile.path);
+        } catch (e) {}
+        return res.status(500).json({
+          error: "Erreur serveur lors de la sauvegarde de l'image secondaire.",
+        });
+      }
+    }
+
     if (!Patcher) {
-      // Ce cas pourrait être redondant si Object.keys(updates).length === 0 est déjà vérifié,
-      // mais il protège contre des clés non autorisées qui seraient les seules présentes.
       return res
         .status(400)
         .json({ message: "Aucun champ valide à mettre à jour fourni." });
+    }
+
+    // Marquer que des mises à jour canvas ont été effectuées
+    let canvasUpdated = updates.hasOwnProperty("canvas");
+
+    // Si les images ont été modifiées ou si des champs canvas ont été modifiés, mettre à jour les modèles associés
+    if (imageUpdated || imageRgltUpdated || updates.hasOwnProperty("canvas")) {
+      try {
+        const modelsData = await fsp.readFile(MODELS_FILE, "utf8");
+        const models = JSON.parse(modelsData);
+        
+        // Trouver tous les modèles associés à cette catégorie
+        const modelsToUpdate = models.filter(m => m.categoryId === categoryIdToUpdate);
+        
+        if (modelsToUpdate.length > 0) {
+          // Mettre à jour chaque modèle
+          for (const model of modelsToUpdate) {
+            if (model.canvas && Array.isArray(model.canvas)) {
+              // Parcourir tous les éléments du canvas
+              for (const canvasElement of model.canvas) {
+                if (canvasElement.type === "header") {
+                  // Mettre à jour l'image principale si elle a été modifiée
+                  if (imageUpdated && categoryToUpdate.image) {
+                    canvasElement.src = categoryToUpdate.image;
+                  }
+                  
+                  // Mettre à jour l'image secondaire si elle a été modifiée
+                  if (imageRgltUpdated && categoryToUpdate.imageRglt) {
+                    canvasElement.srcRglt = categoryToUpdate.imageRglt;
+                  }
+                  
+                  // Mettre à jour les autres propriétés du header (comme backgroundColor) si elles ont été modifiées
+                  if (updates.hasOwnProperty("canvas") && updates.canvas && Array.isArray(updates.canvas) && updates.canvas[0]) {
+                    const updatedHeader = updates.canvas[0];
+                    if (updatedHeader.backgroundColor !== undefined) {
+                      canvasElement.backgroundColor = updatedHeader.backgroundColor;
+                    }
+                    if (updatedHeader.color !== undefined) {
+                      canvasElement.color = updatedHeader.color;
+                    }
+                    if (updatedHeader.fontSize !== undefined) {
+                      canvasElement.fontSize = updatedHeader.fontSize;
+                    }
+                    if (updatedHeader.fontFamily !== undefined) {
+                      canvasElement.fontFamily = updatedHeader.fontFamily;
+                    }
+                    if (updatedHeader.textAlign !== undefined) {
+                      canvasElement.textAlign = updatedHeader.textAlign;
+                    }
+                    if (updatedHeader.padding !== undefined) {
+                      canvasElement.padding = updatedHeader.padding;
+                    }
+                    if (updatedHeader.margin !== undefined) {
+                      canvasElement.margin = updatedHeader.margin;
+                    }
+                    if (updatedHeader.borderRadius !== undefined) {
+                      canvasElement.borderRadius = updatedHeader.borderRadius;
+                    }
+                    if (updatedHeader.border !== undefined) {
+                      canvasElement.border = updatedHeader.border;
+                    }
+                    if (updatedHeader.boxShadow !== undefined) {
+                      canvasElement.boxShadow = updatedHeader.boxShadow;
+                    }
+                  }
+                }
+                
+                // Mettre à jour les éléments de type "background-color" si le canvas a été modifié
+                if (canvasElement.type === "background-color" && updates.hasOwnProperty("canvas") && updates.canvas && Array.isArray(updates.canvas)) {
+                  // Chercher l'élément background-color correspondant dans les mises à jour
+                  const updatedBackground = updates.canvas.find(el => el.type === "background-color");
+                  if (updatedBackground) {
+                    if (updatedBackground.backgroundColor !== undefined) {
+                      canvasElement.backgroundColor = updatedBackground.backgroundColor;
+                    }
+                    if (updatedBackground.opacity !== undefined) {
+                      canvasElement.opacity = updatedBackground.opacity;
+                    }
+                    if (updatedBackground.gradient !== undefined) {
+                      canvasElement.gradient = updatedBackground.gradient;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          
+          // Sauvegarder les modèles mis à jour
+          await fsp.writeFile(MODELS_FILE, JSON.stringify(models, null, 2));
+          console.log(`${modelsToUpdate.length} modèles mis à jour pour la catégorie ${categoryIdToUpdate}`);
+        }
+      } catch (e) {
+        if (e.code !== "ENOENT") {
+          console.warn("Erreur lors de la mise à jour des modèles associés:", e);
+        }
+      }
     }
 
     categories[categoryIndex] = categoryToUpdate;
@@ -1600,13 +1804,28 @@ app.patch("/api/categories/:id", authenticateToken, async (req, res) => {
     res.json({
       message: "Catégorie mise à jour avec succès.",
       category: categoryToUpdate,
+      modelsUpdated: imageUpdated || imageRgltUpdated || canvasUpdated ? true : false,
+      updatesApplied: {
+        images: imageUpdated || imageRgltUpdated,
+        canvas: canvasUpdated
+      }
     });
   } catch (error) {
     console.error(
       `Erreur lors de la mise à jour de la catégorie ${categoryIdToUpdate}:`,
       error
     );
-    // Éviter de fuiter des détails de l'erreur au client en production
+    // Nettoyer les fichiers temporaires en cas d'erreur
+    if (req.files?.image?.[0]?.path) {
+      try {
+        await fsp.unlink(req.files.image[0].path);
+      } catch (e) {}
+    }
+    if (req.files?.imageRglt?.[0]?.path) {
+      try {
+        await fsp.unlink(req.files.imageRglt[0].path);
+      } catch (e) {}
+    }
     res.status(500).json({
       message: "Erreur serveur lors de la mise à jour de la catégorie.",
     });
