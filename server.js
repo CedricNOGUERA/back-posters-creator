@@ -91,20 +91,50 @@ function authenticateToken(req, res, next) {
   const token = req.headers["authorization"]?.split(" ")[1];
   if (!token) {
     console.log("❌ Aucun token fourni");
-    return res.sendStatus(401);
+    return res.status(401).json({ 
+      error: "Token manquant",
+      message: "Aucun token d'authentification fourni" 
+    });
   }
 
   jwt.verify(token, JWT_SECRET, (err, decoded) => {
     if (err) {
       console.log("❌ Token invalide:", err.message);
-      return res.sendStatus(403);
+      
+      // Gérer spécifiquement l'erreur d'expiration
+      if (err.name === 'TokenExpiredError') {
+        return res.status(401).json({ 
+          error: "Token expiré",
+          message: "Token invalide: jwt expired",
+          code: "TOKEN_EXPIRED"
+        });
+      }
+      
+      // Gérer les autres types d'erreurs JWT
+      if (err.name === 'JsonWebTokenError') {
+        return res.status(401).json({ 
+          error: "Token invalide",
+          message: "Token d'authentification invalide",
+          code: "TOKEN_INVALID"
+        });
+      }
+      
+      // Erreur JWT générique
+      return res.status(401).json({ 
+        error: "Erreur d'authentification",
+        message: "Erreur lors de la vérification du token",
+        code: "JWT_ERROR"
+      });
     }
 
     const users = JSON.parse(fs.readFileSync(USERS_FILE, "utf8"));
     const user = users.find((u) => u.id === decoded.id);
     if (!user) {
       console.log("❌ Utilisateur non trouvé");
-      return res.sendStatus(404);
+      return res.status(404).json({ 
+        error: "Utilisateur non trouvé",
+        message: "L'utilisateur associé à ce token n'existe plus" 
+      });
     }
 
     console.log("✅ Authentification réussie pour l'utilisateur:", user.email);
