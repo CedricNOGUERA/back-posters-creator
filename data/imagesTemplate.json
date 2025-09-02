@@ -148,5 +148,15 @@
     "id": 30,
     "name": "test.png",
     "templateId": 28
+  },
+  {
+    "id": 31,
+    "name": "tust.png",
+    "templateId": 28
+  },
+  {
+    "id": 32,
+    "name": "mecanic.png",
+    "templateId": 29
   }
 ]
