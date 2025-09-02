@@ -1278,6 +1278,76 @@ app.get("/api/categories", (req, res) => {
   }
 });
 
+// Nouvelle route pour récupérer les catégories avec pagination
+app.get("/api/categories-paginated", (req, res) => {
+  const filePath = path.join(__dirname, "data", "categories.json");
+  
+  try {
+    // Récupérer les paramètres de pagination depuis la query string
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const search = req.query.search || "";
+    
+    // Validation des paramètres
+    if (page < 1) {
+      return res.status(400).json({ 
+        error: "Le numéro de page doit être supérieur à 0" 
+      });
+    }
+    
+    if (limit < 1 || limit > 100) {
+      return res.status(400).json({ 
+        error: "Le nombre d'éléments par page doit être entre 1 et 100" 
+      });
+    }
+    
+    const data = fs.readFileSync(filePath, "utf-8");
+    let categoriesData = JSON.parse(data);
+    
+    // Traiter les variables d'environnement dans les données
+    categoriesData = processEnvVars(categoriesData);
+    
+    // Filtrer par recherche si un terme de recherche est fourni
+    if (search.trim()) {
+      const searchLower = search.toLowerCase();
+      categoriesData = categoriesData.filter(category => 
+        category.name && category.name.toLowerCase().includes(searchLower) ||
+        (category.icon && category.icon.toLowerCase().includes(searchLower))
+      );
+    }
+    
+    // Calculer la pagination
+    const totalItems = categoriesData.length;
+    const totalPages = Math.ceil(totalItems / limit);
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+    
+    // Extraire les éléments de la page demandée
+    const paginatedCategories = categoriesData.slice(startIndex, endIndex);
+    
+    // Préparer la réponse avec les métadonnées de pagination
+    const response = {
+      categories: paginatedCategories,
+      pagination: {
+        currentPage: page,
+        totalPages: totalPages,
+        totalItems: totalItems,
+        itemsPerPage: limit,
+        hasNextPage: page < totalPages,
+        hasPreviousPage: page > 1,
+        nextPage: page < totalPages ? page + 1 : null,
+        previousPage: page > 1 ? page - 1 : null
+      }
+    };
+    
+    res.json(response);
+    
+  } catch (error) {
+    console.error("Erreur lors de la lecture de categories.json :", error);
+    res.status(500).json({ error: "Impossible de lire categories.json" });
+  }
+});
+
 app.get("/api/categories/:id", (req, res) => {
   const categoryId = parseInt(req.params.id);
   fs.readFile(
