@@ -20800,8 +20800,8 @@
         "left": 0,
         "width": 750,
         "height": 142.85714285714286,
-        "src": "/uploads/categories/headerPictures/5/REMISE-IMMEDIATE.png",
-        "backgroundColor": "#ae00ff"
+        "src": "/uploads/categories/headerPictures/5/4+1offert.png",
+        "backgroundColor": "#e100ff"
       },
       {
         "type": "background-color",
@@ -20879,8 +20879,8 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "/uploads/categories/headerPictures/5/REMISE-IMMEDIATE.png",
-        "backgroundColor": "#ae00ff"
+        "src": "/uploads/categories/headerPictures/5/4+1offert.png",
+        "backgroundColor": "#e100ff"
       },
       {
         "type": "background-color",
@@ -20931,6 +20931,136 @@
         "fontWeight": 700,
         "color": "#000000",
         "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "templateId": 29,
+    "categoryId": 6,
+    "dimensionId": 2,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 750,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/6/4+2.png",
+        "backgroundColor": "#ff0000"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 750,
+        "height": 357.1428571428571,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "enableText",
+        "top": 170.203125,
+        "left": 48.203125,
+        "text": "Vendu seul",
+        "fontFamily": "Impact",
+        "fontSize": 49,
+        "fontWeight": 400,
+        "color": "#005195",
+        "rotation": 0
+      },
+      {
+        "type": "verticalLine",
+        "top": 170.703125,
+        "left": 343.234375,
+        "height": 174,
+        "color": "#005192",
+        "thickness": 2
+      },
+      {
+        "type": "enableText",
+        "top": 180.203125,
+        "left": 395.203125,
+        "text": "Le 2ème produit",
+        "fontFamily": "Impact",
+        "fontSize": 38,
+        "fontWeight": 400,
+        "color": "#005195",
+        "rotation": 0
+      },
+      {
+        "type": "price",
+        "bottom": 136.796875,
+        "right": 465.40625,
+        "width": 100,
+        "text": "1085",
+        "fontFamily": "Impact",
+        "fontSize": 103,
+        "fontWeight": 1000,
+        "color": "#005192",
+        "rotation": 0,
+        "textDecoration": "none",
+        "showCustomValue": true
+      },
+      {
+        "type": "price",
+        "bottom": 138,
+        "right": 133.40625,
+        "width": 100,
+        "text": "760",
+        "fontFamily": "Impact",
+        "fontSize": 104,
+        "fontWeight": 1000,
+        "color": "#005192",
+        "rotation": 0,
+        "textDecoration": "none",
+        "showCustomValue": true
+      },
+      {
+        "type": "text",
+        "top": 390.703125,
+        "left": 20.234375,
+        "text": "CHOCOLAT EN POUDRE CARREFOUR",
+        "fontFamily": "Impact",
+        "fontSize": 19,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 414.703125,
+        "left": 21.234375,
+        "text": "1KG",
+        "fontFamily": "Impact",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 433.703125,
+        "left": 20.234375,
+        "text": "Soit les 2 produits : ",
+        "fontFamily": "Impact",
+        "fontSize": 16,
+        "fontWeight": 200,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "price",
+        "bottom": 41.296875,
+        "right": 557,
+        "width": 100,
+        "text": "1845",
+        "fontFamily": "Impact",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0,
+        "textDecoration": "none",
+        "showCustomValue": false
       }
     ]
   }
