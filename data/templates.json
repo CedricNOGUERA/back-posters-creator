@@ -97,25 +97,5 @@
     "shopIds": [
       2
     ]
-  },
-  {
-    "id": 28,
-    "name": "tust",
-    "image": "tust.png",
-    "categoryId": 5,
-    "shopIds": [
-      1,
-      2
-    ]
-  },
-  {
-    "id": 29,
-    "name": "mecanic",
-    "image": "mecanic.png",
-    "categoryId": 6,
-    "shopIds": [
-      1,
-      2
-    ]
   }
 ]

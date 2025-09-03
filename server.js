@@ -1961,12 +1961,13 @@ app.delete("/api/categories/:id", authenticateToken, async (req, res) => {
     const categoryToDelete = categories[categoryIndex]; // Récupérer l'objet catégorie
 
     // Supprimer tous les modèles associés à cette catégorie
+    let modelsToDelete = [];
     try {
       const modelsData = await fsp.readFile(MODELS_FILE, "utf8");
       const models = JSON.parse(modelsData);
       
       // Filtrer les modèles à supprimer
-      const modelsToDelete = models.filter(m => m.categoryId === categoryIdToDelete);
+      modelsToDelete = models.filter(m => m.categoryId === categoryIdToDelete);
       const remainingModels = models.filter(m => m.categoryId !== categoryIdToDelete);
       
       // Supprimer les miniatures des modèles supprimés
@@ -2001,12 +2002,13 @@ app.delete("/api/categories/:id", authenticateToken, async (req, res) => {
     }
 
     // Supprimer tous les templates associés à cette catégorie
+    let templatesToDelete = [];
     try {
       const templatesData = await fsp.readFile(TEMPLATES_FILE, "utf8");
       const templates = JSON.parse(templatesData);
       
       // Filtrer les templates à supprimer
-      const templatesToDelete = templates.filter(t => t.categoryId === categoryIdToDelete);
+      templatesToDelete = templates.filter(t => t.categoryId === categoryIdToDelete);
       const remainingTemplates = templates.filter(t => t.categoryId !== categoryIdToDelete);
       
       // Sauvegarder la liste des templates mise à jour
