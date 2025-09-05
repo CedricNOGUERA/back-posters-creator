@@ -27,6 +27,7 @@ const IMAGES_TEMPLATE_FILE = path.join(
   "imagesTemplate.json"
 );
 const CANVAS_FILE = path.join(__dirname, "data", "canvas.json");
+const VARIOUS_PICTURES_FILE = path.join(__dirname, "data", "variousPictures.json");
 
 // Dossier principal pour les uploads
 const UPLOAD_BASE_DIR = path.join(__dirname, "uploads");
@@ -2135,6 +2136,188 @@ app.delete("/api/categories/:id", authenticateToken, async (req, res) => {
     res.status(500).json({
       message: "Erreur serveur lors de la suppression de la catégorie.",
     });
+  }
+});
+
+/////////////////////////////////////
+//variousPictures
+/////////////////////////////////////
+
+// Configuration Multer pour les images variousPictures
+const variousPicturesStorage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    const destDir = path.join(UPLOAD_BASE_DIR, "variousPictures");
+    fs.mkdirSync(destDir, { recursive: true });
+    cb(null, destDir);
+  },
+  filename: function (req, file, cb) {
+    // Garder le nom original du fichier
+    cb(null, file.originalname);
+  },
+});
+
+const uploadVariousPicture = multer({ 
+  storage: variousPicturesStorage,
+  limits: { fileSize: 5 * 1024 * 1024 }, // Limite de 5MB
+  fileFilter: function (req, file, cb) {
+    console.log("🔍 Filtrage du fichier variousPictures:", file.originalname, file.mimetype);
+    const filetypes = /jpeg|jpg|png|gif|webp|svg/;
+    const mimetype = filetypes.test(file.mimetype);
+    const extname = filetypes.test(
+      path.extname(file.originalname).toLowerCase()
+    );
+    if (mimetype && extname) {
+      console.log("✅ Fichier variousPictures accepté:", file.originalname);
+      return cb(null, true);
+    }
+    console.log("❌ Fichier variousPictures rejeté:", file.originalname);
+    cb(
+      new Error(
+        "Erreur : Seules les images (jpeg, jpg, png, gif, webp, svg) sont autorisées !"
+      )
+    );
+  },
+});
+
+app.get("/api/various-pictures", (req, res) => {
+  const filePath = path.join(__dirname, "data", "variousPictures.json");
+  try {
+    const data = fs.readFileSync(filePath, "utf-8");
+    const variousPicturesData = JSON.parse(data);
+    // Traiter les variables d'environnement dans les données
+    const processedData = processEnvVars(variousPicturesData);
+    res.json(processedData);
+  } catch (error) {
+    console.error("Erreur lors de la lecture de variousPictures.json :", error);
+    res.status(500).json({ error: "Impossible de lire variousPictures.json" });
+  }
+});
+
+app.post("/api/add-various-picture", authenticateToken, uploadVariousPicture.single("image"), async (req, res) => {
+  // Vérifier le rôle de l'utilisateur (seulement super_admin peut ajouter)
+  if (req.user.role !== "super_admin") {
+    // Si un fichier a été uploadé, le supprimer car accès refusé
+    if (req.file?.path) {
+      try {
+        await fsp.unlink(req.file.path);
+      } catch (e) {
+        console.error("Erreur suppression tmp image:", e);
+      }
+    }
+    return res
+      .status(403)
+      .json({ message: "Accès non autorisé pour ajouter une image variousPictures." });
+  }
+
+  let newData;
+  try {
+    // Les données JSON sont attendues dans le champ 'data' du formulaire multipart
+    if (!req.body.data) {
+      if (req.file?.path) {
+        try {
+          await fsp.unlink(req.file.path);
+        } catch (e) {}
+      }
+      return res.status(400).json({
+        error: 'Le champ "data" contenant les informations de l\'image est manquant.',
+      });
+    }
+    newData = JSON.parse(req.body.data);
+  } catch (e) {
+    if (req.file?.path) {
+      try {
+        await fsp.unlink(req.file.path);
+      } catch (e) {}
+    }
+    return res.status(400).json({
+      error: 'Données JSON invalides dans le champ "data".',
+      details: e.message,
+    });
+  }
+
+  // Validation des données reçues
+  if (!newData || typeof newData !== "object" || !newData.name || !newData.value) {
+    if (req.file?.path) {
+      try {
+        await fsp.unlink(req.file.path);
+      } catch (e) {}
+    }
+    return res
+      .status(400)
+      .json({ error: "Données invalides. Le nom et la valeur sont requis." });
+  }
+
+  // Vérifier qu'un fichier image a été fourni
+  if (!req.file) {
+    return res.status(400).json({ error: "Aucune image fournie." });
+  }
+
+  try {
+    let variousPictures = [];
+    try {
+      const variousPicturesData = await fsp.readFile(VARIOUS_PICTURES_FILE, "utf8");
+      variousPictures = JSON.parse(variousPicturesData);
+    } catch (readError) {
+      if (readError.code !== "ENOENT") {
+        throw readError;
+      }
+      console.log("variousPictures.json non trouvé, initialisation avec un tableau vide.");
+    }
+
+    // Vérifier si une image avec le même nom existe déjà
+    const existingPicture = variousPictures.find(pic => pic.name === newData.name);
+    if (existingPicture) {
+      // Supprimer le fichier uploadé car il y a un conflit
+      try {
+        await fsp.unlink(req.file.path);
+      } catch (e) {}
+      return res.status(409).json({
+        error: "Une image avec ce nom existe déjà.",
+      });
+    }
+
+    const lastId = variousPictures.reduce(
+      (maxId, item) => Math.max(maxId, item.id || 0),
+      0
+    );
+    const nextId = lastId + 1;
+
+    // Préparer l'entrée de la nouvelle image
+    const newEntry = {
+      id: nextId,
+      name: newData.name,
+      src: `/uploads/variousPictures/${req.file.originalname}`,
+      value: newData.value,
+      createAt: new Date().toISOString()
+    };
+
+    // Ajouter la nouvelle image
+    variousPictures.push(newEntry);
+
+    // Réécrire le fichier variousPictures.json
+    await fsp.writeFile(VARIOUS_PICTURES_FILE, JSON.stringify(variousPictures, null, 2));
+
+    // Retourner l'image créée
+    res.status(201).json({
+      message: "Image variousPictures ajoutée avec succès.",
+      picture: newEntry,
+    });
+  } catch (error) {
+    console.error(
+      "Erreur lors de l'ajout de l'image variousPictures (catch principal) :",
+      error
+    );
+    // Nettoyage du fichier temporaire en cas d'erreur
+    if (req.file?.path) {
+      try {
+        await fsp.unlink(req.file.path);
+      } catch (e) {
+        /* Ignorer */
+      }
+    }
+    res
+      .status(500)
+      .json({ error: "Erreur serveur lors de l'ajout de l'image variousPictures." });
   }
 });
 

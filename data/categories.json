@@ -130,5 +130,39 @@
         "backgroundColor": "#ffea00"
       }
     ]
+  },
+  {
+    "id": 5,
+    "name": "Blacky",
+    "image": "/uploads/categories/headerPictures/5/HEADER_BF.jpg",
+    "imageRglt": null,
+    "icon": {
+      "name": "Étoile",
+      "value": "fa fa-star"
+    },
+    "shopIds": [
+      1
+    ],
+    "canvasId": 5,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 125,
+        "src": "/uploads/categories/headerPictures/5/HEADER_BF.jpg",
+        "srcRglt": null,
+        "backgroundColor": "#ff0000"
+      },
+      {
+        "type": "background-color",
+        "top": 125,
+        "left": 0,
+        "width": 500,
+        "height": 375,
+        "backgroundColor": "#ffea00"
+      }
+    ]
   }
 ]
