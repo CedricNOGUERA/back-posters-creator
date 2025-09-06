@@ -2321,6 +2321,83 @@ app.post("/api/add-various-picture", authenticateToken, uploadVariousPicture.sin
   }
 });
 
+// Route pour supprimer une image variousPictures
+app.delete("/api/various-pictures/:id", authenticateToken, async (req, res) => {
+  // Vérifier le rôle de l'utilisateur (seulement super_admin peut supprimer)
+  if (req.user.role !== "super_admin") {
+    return res
+      .status(403)
+      .json({ message: "Accès non autorisé pour supprimer une image variousPictures." });
+  }
+
+  const pictureIdToDelete = parseInt(req.params.id, 10);
+
+  if (isNaN(pictureIdToDelete)) {
+    return res.status(400).json({ message: "ID d'image invalide." });
+  }
+
+  try {
+    let variousPictures = [];
+    try {
+      const variousPicturesData = await fsp.readFile(VARIOUS_PICTURES_FILE, "utf8");
+      variousPictures = JSON.parse(variousPicturesData);
+    } catch (readError) {
+      if (readError.code === "ENOENT") {
+        return res
+          .status(404)
+          .json({ message: "Fichier des images variousPictures non trouvé." });
+      }
+      throw readError;
+    }
+
+    const pictureIndex = variousPictures.findIndex(
+      (pic) => pic.id === pictureIdToDelete
+    );
+
+    if (pictureIndex === -1) {
+      return res.status(404).json({ message: "Image non trouvée." });
+    }
+
+    const pictureToDelete = variousPictures[pictureIndex];
+
+    // Supprimer le fichier image du système de fichiers
+    if (pictureToDelete.src) {
+      const imagePath = path.join(__dirname, pictureToDelete.src);
+      try {
+        await fsp.unlink(imagePath);
+        console.log(`Image supprimée: ${imagePath}`);
+      } catch (unlinkError) {
+        if (unlinkError.code !== "ENOENT") {
+          console.warn(
+            `Erreur lors de la suppression de l'image ${imagePath}:`,
+            unlinkError
+          );
+          // Ne pas bloquer la suppression de l'entrée si l'image ne peut être supprimée
+        }
+      }
+    }
+
+    // Supprimer l'entrée du tableau
+    variousPictures.splice(pictureIndex, 1);
+
+    // Sauvegarder le fichier JSON mis à jour
+    await fsp.writeFile(VARIOUS_PICTURES_FILE, JSON.stringify(variousPictures, null, 2));
+
+    res.json({ 
+      message: "Image variousPictures supprimée avec succès.",
+      deletedPicture: pictureToDelete
+    });
+  } catch (error) {
+    console.error(
+      `Erreur lors de la suppression de l'image variousPictures ${pictureIdToDelete}:`,
+      error
+    );
+    res.status(500).json({
+      message: "Erreur serveur lors de la suppression de l'image variousPictures.",
+    });
+  }
+});
+
 //////////////////////////
 // Shops
 //////////////////////////
