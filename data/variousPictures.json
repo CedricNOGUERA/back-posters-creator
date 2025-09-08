@@ -1,23 +1,30 @@
 [
-    {
-        "id": 1,
-        "name": "garantie-1-an",
-        "src": "/uploads/variousPictures/garantie-1-an.png",
-        "value": "1an",
-        "createAt": ""
-    },
-    {
-        "id": 2,
-        "name": "garantie-2-ans",
-        "src": "/uploads/variousPictures/garantie-2-ans.png",
-        "value": "2ans",
-        "createAt": ""
-    },
-    {
-        "id": 3,
-        "name": "garantie-6-mois",
-        "src": "/uploads/variousPictures/garantie-6-mois.png",
-        "value": "6mois",
-        "createAt": ""
-    }
+  {
+    "id": 1,
+    "name": "garantie-1-an",
+    "src": "/uploads/variousPictures/garantie-1-an.png",
+    "value": "1an",
+    "createdAt": "2025-09-06T00:54:54.031Z"
+  },
+  {
+    "id": 2,
+    "name": "garantie-2-ans",
+    "src": "/uploads/variousPictures/garantie-2-ans.png",
+    "value": "2ans",
+    "createdAt": "2025-09-06T00:54:54.031Z"
+  },
+  {
+    "id": 3,
+    "name": "garantie-6-mois",
+    "src": "/uploads/variousPictures/garantie-6-mois.png",
+    "value": "6mois",
+    "createdAt": "2025-09-06T00:54:54.031Z"
+  },
+  {
+    "id": 4,
+    "name": "truc",
+    "src": "/uploads/variousPictures/JBL logo.png",
+    "value": "truc",
+    "createdAt": "2025-09-06T00:54:54.031Z"
+  }
 ]
