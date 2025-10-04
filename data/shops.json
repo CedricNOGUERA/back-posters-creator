@@ -8,5 +8,10 @@
     "id": 2,
     "name": "Média Nui",
     "cover": "uploads/shopMiniatures/Média Nui/media-nui.svg"
+  },
+  {
+    "id": 3,
+    "name": "Champion",
+    "cover": "uploads/shopMiniatures/Champion/image1260-removebg-preview.png"
   }
 ]
