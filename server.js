@@ -943,6 +943,100 @@ app.post("/api/add-template", (req, res) => {
   });
 });
 
+// Route pour modifier un template (PATCH)
+app.patch("/api/templates/:id", authenticateToken, async (req, res) => {
+  if (req.user.role !== "super_admin") {
+    return res
+      .status(403)
+      .json({ message: "Accès non autorisé pour modifier un template." });
+  }
+
+  const templateIdToUpdate = parseInt(req.params.id, 10);
+  const updates = req.body;
+
+  if (isNaN(templateIdToUpdate)) {
+    return res.status(400).json({ message: "ID de template invalide." });
+  }
+
+  if (!updates || typeof updates !== "object" || Object.keys(updates).length === 0) {
+    return res
+      .status(400)
+      .json({ message: "Aucune donnée de mise à jour fournie." });
+  }
+
+  // Interdire la modification de l'ID
+  if (updates.hasOwnProperty("id")) {
+    return res.status(400).json({
+      message: "La modification de l'ID du template n'est pas autorisée.",
+    });
+  }
+
+  try {
+    let templates;
+    try {
+      const templatesData = await fsp.readFile(TEMPLATES_FILE, "utf8");
+      templates = JSON.parse(templatesData);
+    } catch (readError) {
+      if (readError.code === "ENOENT") {
+        return res
+          .status(404)
+          .json({ message: "Fichier des templates non trouvé." });
+      }
+      console.error("Erreur lecture ou parse templates.json:", readError);
+      return res.status(500).json({
+        message:
+          "Erreur serveur lors de la lecture des données des templates.",
+      });
+    }
+
+    const templateIndex = templates.findIndex(
+      (t) => t.id === templateIdToUpdate
+    );
+
+    if (templateIndex === -1) {
+      return res.status(404).json({ message: "Template non trouvé." });
+    }
+
+    // Appliquer les mises à jour
+    const templateToUpdate = { ...templates[templateIndex] };
+    const allowedFields = ["name", "image", "categoryId", "shopIds"];
+    let hasUpdates = false;
+
+    // Traiter les champs de données
+    for (const field of allowedFields) {
+      if (updates.hasOwnProperty(field)) {
+        templateToUpdate[field] = updates[field];
+        hasUpdates = true;
+      }
+    }
+
+    if (!hasUpdates) {
+      return res
+        .status(400)
+        .json({ message: "Aucun champ valide à mettre à jour fourni." });
+    }
+
+    // Mettre à jour le template dans le tableau
+    templates[templateIndex] = templateToUpdate;
+
+    // Sauvegarder le fichier
+    await fsp.writeFile(TEMPLATES_FILE, JSON.stringify(templates, null, 2));
+
+    res.json({
+      message: "Template mis à jour avec succès.",
+      template: templateToUpdate,
+    });
+  } catch (error) {
+    console.error(
+      `Erreur lors de la mise à jour du template ${templateIdToUpdate}:`,
+      error
+    );
+    res.status(500).json({
+      message: "Erreur serveur lors de la mise à jour du template.",
+    });
+  }
+});
+
 // Route pour supprimer un template
 app.delete("/api/templates/:id", authenticateToken, async (req, res) => {
   if (req.user.role !== "super_admin") {
