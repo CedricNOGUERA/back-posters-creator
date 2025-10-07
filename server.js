@@ -1799,6 +1799,7 @@ app.patch("/api/categories/:id", authenticateToken, uploadCategoryFiles, async (
     let Patcher = false;
     let imageUpdated = false;
     let imageRgltUpdated = false;
+  let templatesUpdatedCount = 0;
 
     // Traiter les champs de données
     for (const field of allowedFields) {
@@ -1992,6 +1993,30 @@ app.patch("/api/categories/:id", authenticateToken, uploadCategoryFiles, async (
       }
     }
 
+    // Mettre à jour également les templates liés à cette catégorie (propager shopIds)
+    if (updates.hasOwnProperty("shopIds")) {
+      try {
+        const templatesData = await fsp.readFile(TEMPLATES_FILE, "utf8");
+        const templates = JSON.parse(templatesData);
+        let hasTemplateChanges = false;
+        for (const template of templates) {
+          if (template.categoryId === categoryIdToUpdate) {
+            template.shopIds = updates.shopIds || [];
+            templatesUpdatedCount += 1;
+            hasTemplateChanges = true;
+          }
+        }
+        if (hasTemplateChanges) {
+          await fsp.writeFile(TEMPLATES_FILE, JSON.stringify(templates, null, 2));
+          console.log(`${templatesUpdatedCount} template(s) mis à jour pour la catégorie ${categoryIdToUpdate}`);
+        }
+      } catch (e) {
+        if (e.code !== "ENOENT") {
+          console.warn("Erreur lors de la mise à jour des templates associés:", e);
+        }
+      }
+    }
+
     categories[categoryIndex] = categoryToUpdate;
 
     await fsp.writeFile(CATEGORIES_FILE, JSON.stringify(categories, null, 2));
@@ -2000,6 +2025,7 @@ app.patch("/api/categories/:id", authenticateToken, uploadCategoryFiles, async (
       message: "Catégorie mise à jour avec succès.",
       category: categoryToUpdate,
       modelsUpdated: imageUpdated || imageRgltUpdated || canvasUpdated ? true : false,
+      templatesUpdated: templatesUpdatedCount,
       updatesApplied: {
         images: imageUpdated || imageRgltUpdated,
         canvas: canvasUpdated
@@ -2230,6 +2256,236 @@ app.delete("/api/categories/:id", authenticateToken, async (req, res) => {
     res.status(500).json({
       message: "Erreur serveur lors de la suppression de la catégorie.",
     });
+  }
+});
+
+// Route pour dupliquer une catégorie et ses éléments associés (templates, modèles)
+app.post("/api/categories/:id/duplicate", authenticateToken, async (req, res) => {
+  if (req.user.role !== "super_admin") {
+    return res.status(403).json({ message: "Accès non autorisé." });
+  }
+
+  const sourceCategoryId = parseInt(req.params.id, 10);
+  const { name: newCategoryName } = req.body || {};
+
+  if (isNaN(sourceCategoryId)) {
+    return res.status(400).json({ message: "ID de catégorie invalide." });
+  }
+  if (!newCategoryName || typeof newCategoryName !== "string" || !newCategoryName.trim()) {
+    return res.status(400).json({ message: "Un nouveau nom de catégorie est requis." });
+  }
+
+  // Sanitize: retirer accents, espaces et caractères spéciaux, conserver lettres/chiffres et tirets
+  const sanitizeName = (value) => {
+    const noDiacritics = value.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const replacedSpaces = noDiacritics.replace(/\s+/g, "-");
+    const stripped = replacedSpaces.replace(/[^a-zA-Z0-9-]/g, "");
+    return stripped.replace(/-+/g, "-").replace(/^-|-$/g, "");
+  };
+
+  try {
+    // 1) Charger les catégories et trouver la source
+    const categoriesData = await fsp.readFile(CATEGORIES_FILE, "utf8");
+    const categories = JSON.parse(categoriesData);
+    const sourceCategory = categories.find((c) => c.id === sourceCategoryId);
+    if (!sourceCategory) {
+      return res.status(404).json({ message: "Catégorie source non trouvée." });
+    }
+
+    // Calculer le nouvel ID de catégorie
+    const newCategoryId = categories.reduce((maxId, item) => Math.max(maxId, item.id || 0), 0) + 1;
+
+    // Préparer la nouvelle catégorie (copie + ajustements)
+    const newCategory = { ...sourceCategory };
+    newCategory.id = newCategoryId;
+    newCategory.canvasId = newCategoryId;
+    newCategory.name = newCategoryName.trim();
+
+    // Copier les images d'en-tête si présentes vers le nouveau dossier
+    const headerBaseDir = path.join(UPLOAD_BASE_DIR, "categories", "headerPictures");
+    const oldHeaderDir = path.join(headerBaseDir, String(sourceCategoryId));
+    const newHeaderDir = path.join(headerBaseDir, String(newCategoryId));
+    await fsp.mkdir(newHeaderDir, { recursive: true });
+
+    const copyHeaderImageIfAny = async (srcPathStr) => {
+      if (!srcPathStr || typeof srcPathStr !== "string") return null;
+      // srcPathStr attendu: /uploads/categories/headerPictures/{id}/{filename}
+      const fileName = path.basename(srcPathStr);
+      const from = path.join(oldHeaderDir, fileName);
+      const to = path.join(newHeaderDir, fileName);
+      try {
+        await fsp.copyFile(from, to);
+        return `/uploads/categories/headerPictures/${newCategoryId}/${fileName}`;
+      } catch (e) {
+        // Si le fichier n'existe pas, on garde null pour éviter des chemins cassés
+        if (e.code !== "ENOENT") {
+          console.warn("Erreur copie image d'en-tête:", e);
+        }
+        return null;
+      }
+    };
+
+    // Copier les miniatures de la catégorie si présentes
+    const miniaturesBaseDir = path.join(__dirname, "uploads", "miniatures");
+    const oldMiniaturesDir = path.join(miniaturesBaseDir, String(sourceCategoryId));
+    const newMiniaturesDir = path.join(miniaturesBaseDir, String(newCategoryId));
+    
+    try {
+      // Vérifier si le dossier source existe et le copier
+      const sourceExists = await fsp.access(oldMiniaturesDir).then(() => true).catch(() => false);
+      if (sourceExists) {
+        await fsp.mkdir(newMiniaturesDir, { recursive: true });
+        const files = await fsp.readdir(oldMiniaturesDir);
+        for (const file of files) {
+          const from = path.join(oldMiniaturesDir, file);
+          const to = path.join(newMiniaturesDir, file);
+          try {
+            await fsp.copyFile(from, to);
+            console.log(`Miniature copiée: ${file}`);
+          } catch (e) {
+            console.warn(`Erreur copie miniature ${file}:`, e);
+          }
+        }
+      }
+    } catch (e) {
+      console.warn("Erreur lors de la copie des miniatures:", e);
+    }
+
+    // Copier les images de catégorie si présentes
+    const categoryImagesBaseDir = path.join(UPLOAD_BASE_DIR, "categories", "images");
+    const oldCategoryImagesDir = path.join(categoryImagesBaseDir, String(sourceCategoryId));
+    const newCategoryImagesDir = path.join(categoryImagesBaseDir, String(newCategoryId));
+    
+    try {
+      // Vérifier si le dossier source existe et le copier
+      const sourceExists = await fsp.access(oldCategoryImagesDir).then(() => true).catch(() => false);
+      if (sourceExists) {
+        await fsp.mkdir(newCategoryImagesDir, { recursive: true });
+        const files = await fsp.readdir(oldCategoryImagesDir);
+        for (const file of files) {
+          const from = path.join(oldCategoryImagesDir, file);
+          const to = path.join(newCategoryImagesDir, file);
+          try {
+            await fsp.copyFile(from, to);
+            console.log(`Image de catégorie copiée: ${file}`);
+          } catch (e) {
+            console.warn(`Erreur copie image de catégorie ${file}:`, e);
+          }
+        }
+      }
+    } catch (e) {
+      console.warn("Erreur lors de la copie des images de catégorie:", e);
+    }
+
+    // Mettre à jour chemins d'images s'ils existent
+    const newImagePath = await copyHeaderImageIfAny(sourceCategory.image);
+    const newImageRgltPath = await copyHeaderImageIfAny(sourceCategory.imageRglt);
+    newCategory.image = newImagePath;
+    newCategory.imageRglt = newImageRgltPath;
+    if (newCategory.canvas && Array.isArray(newCategory.canvas) && newCategory.canvas[0]) {
+      if (newImagePath) newCategory.canvas[0].src = newImagePath;
+      if (newImageRgltPath) newCategory.canvas[0].srcRglt = newImageRgltPath;
+    }
+
+    // Sauvegarder la nouvelle catégorie
+    categories.push(newCategory);
+    await fsp.writeFile(CATEGORIES_FILE, JSON.stringify(categories, null, 2));
+
+    // 2) Dupliquer les templates de la catégorie
+    let templates = [];
+    try {
+      const templatesRaw = await fsp.readFile(TEMPLATES_FILE, "utf8");
+      templates = JSON.parse(templatesRaw);
+    } catch (e) {
+      if (e.code !== "ENOENT") throw e;
+    }
+
+    const sourceTemplates = templates.filter((t) => t.categoryId === sourceCategoryId);
+    const sanitizedPrefix = sanitizeName(newCategoryName.trim());
+    const lastTemplateId = templates.reduce((maxId, item) => Math.max(maxId, item.id || 0), 0);
+    let nextTemplateId = lastTemplateId + 1;
+    const templateIdMap = new Map(); // oldTemplateId -> newTemplateId
+
+    for (const t of sourceTemplates) {
+      const newT = { ...t };
+      const newId = nextTemplateId++;
+      templateIdMap.set(t.id, newId);
+      newT.id = newId;
+      newT.categoryId = newCategoryId;
+      newT.name = sanitizedPrefix ? `${sanitizedPrefix}-${t.name}` : t.name;
+      // image et shopIds conservés
+      templates.push(newT);
+    }
+    if (sourceTemplates.length > 0) {
+      await fsp.writeFile(TEMPLATES_FILE, JSON.stringify(templates, null, 2));
+    }
+
+    // 2b) Dupliquer les entrées imagesTemplate associés aux templates
+    try {
+      const imagesTemplatesRaw = await fsp.readFile(IMAGES_TEMPLATE_FILE, "utf8");
+      const imagesTemplates = JSON.parse(imagesTemplatesRaw);
+      const lastImageTplId = imagesTemplates.reduce((maxId, item) => Math.max(maxId, item.id || 0), 0);
+      let nextImageTplId = lastImageTplId + 1;
+
+      let hasNewImageTemplates = false;
+      for (const it of imagesTemplates.slice()) {
+        if (templateIdMap.has(it.templateId)) {
+          const newIt = { ...it };
+          newIt.id = nextImageTplId++;
+          newIt.templateId = templateIdMap.get(it.templateId);
+          imagesTemplates.push(newIt);
+          hasNewImageTemplates = true;
+        }
+      }
+      if (hasNewImageTemplates) {
+        await fsp.writeFile(IMAGES_TEMPLATE_FILE, JSON.stringify(imagesTemplates, null, 2));
+      }
+    } catch (e) {
+      if (e.code !== "ENOENT") {
+        console.warn("Duplication imagesTemplate ignorée (erreur):", e);
+      }
+    }
+
+    // 3) Dupliquer les modèles de la catégorie
+    let models = [];
+    try {
+      const modelsRaw = await fsp.readFile(MODELS_FILE, "utf8");
+      models = JSON.parse(modelsRaw);
+    } catch (e) {
+      if (e.code !== "ENOENT") throw e;
+    }
+
+    const sourceModels = models.filter((m) => m.categoryId === sourceCategoryId);
+    const lastModelId = models.reduce((maxId, item) => Math.max(maxId, item.id || 0), 0);
+    let nextModelId = lastModelId + 1;
+    let duplicatedModelsCount = 0;
+
+    for (const m of sourceModels) {
+      const newM = { ...m };
+      newM.id = nextModelId++;
+      newM.categoryId = newCategoryId;
+      if (templateIdMap.has(m.templateId)) {
+        newM.templateId = templateIdMap.get(m.templateId);
+      }
+      // canvas, dimensionId et autres champs inchangés
+      models.push(newM);
+      duplicatedModelsCount += 1;
+    }
+    if (duplicatedModelsCount > 0) {
+      await fsp.writeFile(MODELS_FILE, JSON.stringify(models, null, 2));
+    }
+
+    res.status(201).json({
+      message: "Catégorie dupliquée avec succès.",
+      category: newCategory,
+      duplicated: {
+        templates: sourceTemplates.length,
+        models: duplicatedModelsCount
+      }
+    });
+  } catch (error) {
+    console.error("Erreur lors de la duplication de la catégorie:", error);
+    res.status(500).json({ message: "Erreur serveur lors de la duplication." });
   }
 });
 

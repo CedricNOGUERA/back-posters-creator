@@ -11,7 +11,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -19,7 +19,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -86,7 +86,7 @@
         "left": 0,
         "width": 750,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -94,7 +94,7 @@
         "left": 0,
         "width": 750,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -171,7 +171,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -179,7 +179,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -256,7 +256,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -264,7 +264,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -331,7 +331,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -339,7 +339,7 @@
         "left": 187.5,
         "width": 562.5,
         "height": 150,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -406,7 +406,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -414,7 +414,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -481,7 +481,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -489,7 +489,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -599,7 +599,7 @@
         "left": 0,
         "width": 250,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -607,7 +607,7 @@
         "left": 0,
         "width": 250,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -674,7 +674,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -682,7 +682,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -749,7 +749,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -757,7 +757,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -824,7 +824,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -832,7 +832,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -899,7 +899,7 @@
         "left": 0,
         "width": 750,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -907,7 +907,7 @@
         "left": 0,
         "width": 750,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -984,7 +984,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -992,7 +992,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1069,7 +1069,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1077,7 +1077,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1145,7 +1145,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1153,7 +1153,7 @@
         "left": 187.5,
         "width": 562.5,
         "height": 150,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1220,7 +1220,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1228,7 +1228,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1295,7 +1295,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1303,7 +1303,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1370,7 +1370,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1378,7 +1378,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1445,7 +1445,7 @@
         "left": 0,
         "width": 250,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1453,7 +1453,7 @@
         "left": 0,
         "width": 250,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1520,7 +1520,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1528,7 +1528,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1595,7 +1595,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1603,7 +1603,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1670,7 +1670,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1678,7 +1678,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1756,7 +1756,7 @@
         "left": 0,
         "width": 750,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1764,7 +1764,7 @@
         "left": 0,
         "width": 750,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1852,7 +1852,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1860,7 +1860,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -1948,7 +1948,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -1956,7 +1956,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2034,7 +2034,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2042,7 +2042,7 @@
         "left": 187.5,
         "width": 562.5,
         "height": 150,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2120,7 +2120,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2128,7 +2128,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2206,7 +2206,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2214,7 +2214,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2292,7 +2292,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2300,7 +2300,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2378,7 +2378,7 @@
         "left": 0,
         "width": 250,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2386,7 +2386,7 @@
         "left": 0,
         "width": 250,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2464,7 +2464,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2472,7 +2472,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2550,7 +2550,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2558,7 +2558,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2636,7 +2636,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2644,7 +2644,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2749,7 +2749,7 @@
         "left": 0,
         "width": 750,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2757,7 +2757,7 @@
         "left": 0,
         "width": 750,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2862,7 +2862,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2870,7 +2870,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -2975,7 +2975,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -2983,7 +2983,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -3089,7 +3089,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -3097,7 +3097,7 @@
         "left": 187.5,
         "width": 562.5,
         "height": 150,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -3202,7 +3202,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -3210,7 +3210,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -3315,7 +3315,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -3323,7 +3323,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -3428,7 +3428,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -3436,7 +3436,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -3541,7 +3541,7 @@
         "left": 0,
         "width": 250,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -3549,7 +3549,7 @@
         "left": 0,
         "width": 250,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -3654,7 +3654,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -3662,7 +3662,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -3767,7 +3767,7 @@
         "left": 0,
         "width": 376,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -3775,7 +3775,7 @@
         "left": 0,
         "width": 376,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -3880,7 +3880,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -3888,7 +3888,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -4014,7 +4014,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -4022,7 +4022,7 @@
         "left": 1,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -4150,7 +4150,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -4158,7 +4158,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -4284,7 +4284,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -4292,7 +4292,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -4418,7 +4418,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -4426,7 +4426,7 @@
         "left": 188.5,
         "width": 562.5,
         "height": 150,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -4542,7 +4542,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -4550,7 +4550,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -4676,7 +4676,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -4684,7 +4684,7 @@
         "left": 1,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -4812,7 +4812,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -4820,7 +4820,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -4946,7 +4946,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -4954,7 +4954,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -5080,7 +5080,7 @@
         "left": 0,
         "width": 250,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -5088,7 +5088,7 @@
         "left": 0,
         "width": 250,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -5214,7 +5214,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -5222,7 +5222,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -5348,7 +5348,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -5356,7 +5356,7 @@
         "left": 2,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -5512,7 +5512,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -5520,7 +5520,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -5676,7 +5676,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -5684,7 +5684,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -5840,7 +5840,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -5848,7 +5848,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -6004,7 +6004,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -6012,7 +6012,7 @@
         "left": 187.5,
         "width": 562.5,
         "height": 150,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -6168,7 +6168,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -6176,7 +6176,7 @@
         "left": 2,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -6332,7 +6332,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -6340,7 +6340,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -6496,7 +6496,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -6504,7 +6504,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -6660,7 +6660,7 @@
         "left": 0,
         "width": 250,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -6668,7 +6668,7 @@
         "left": 0,
         "width": 250,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -6824,7 +6824,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -6832,7 +6832,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -6988,7 +6988,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -6996,7 +6996,7 @@
         "left": 2,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -7152,7 +7152,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -7160,7 +7160,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -7316,7 +7316,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -7324,7 +7324,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -7480,7 +7480,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -7488,7 +7488,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -7644,7 +7644,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -7652,7 +7652,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -7808,7 +7808,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -7816,7 +7816,7 @@
         "left": 187.5,
         "width": 562.5,
         "height": 150,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -7972,7 +7972,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -7980,7 +7980,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -8136,7 +8136,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -8144,7 +8144,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -8300,7 +8300,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -8308,7 +8308,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -8464,7 +8464,7 @@
         "left": 0,
         "width": 250,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -8472,7 +8472,7 @@
         "left": 0,
         "width": 250,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -8628,7 +8628,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -8636,7 +8636,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -8792,7 +8792,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -8800,7 +8800,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -8956,7 +8956,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -8964,7 +8964,7 @@
         "left": 0,
         "width": 333.33333333333337,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9011,7 +9011,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9019,7 +9019,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9096,7 +9096,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9104,7 +9104,7 @@
         "left": 187.5,
         "width": 562.5,
         "height": 150,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9171,7 +9171,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9179,7 +9179,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9264,7 +9264,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9272,7 +9272,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9357,7 +9357,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9365,7 +9365,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9450,7 +9450,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9458,7 +9458,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9543,7 +9543,7 @@
         "left": 0,
         "width": 187.5,
         "height": 150,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9551,7 +9551,7 @@
         "left": 188.5,
         "width": 562.5,
         "height": 150,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9627,7 +9627,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9635,7 +9635,7 @@
         "left": 0,
         "width": 353.57142857142856,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9720,7 +9720,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 125.00000000000001,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9728,7 +9728,7 @@
         "left": 0,
         "width": 707.0707070707072,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9813,7 +9813,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9821,7 +9821,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9906,7 +9906,7 @@
         "left": 0,
         "width": 250,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -9914,7 +9914,7 @@
         "left": 0,
         "width": 250,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -9999,7 +9999,7 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -10007,7 +10007,7 @@
         "left": 0,
         "width": 500,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -10092,7 +10092,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -10100,7 +10100,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -10185,7 +10185,7 @@
         "left": 0,
         "width": 375,
         "height": 125,
-        "backgroundColor": "#C20016"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "background-color",
@@ -10193,7 +10193,7 @@
         "left": 0,
         "width": 375,
         "height": 375,
-        "backgroundColor": "#ff0"
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "image",
@@ -21007,26 +21007,294 @@
         "type": "header",
         "top": 0,
         "left": 0,
-        "width": 333.33333333333337,
+        "width": 333,
         "height": 142.85714285714286,
-        "src": "/uploads/categories/headerPictures/5/Photo-de-profil_BF-CRF.jpg",
-        "backgroundColor": "#0f0f0f"
+        "src": "/uploads/categories/headerPictures/6/HEADER_BF.jpg",
+        "backgroundColor": "#000000"
       },
       {
         "type": "background-color",
         "top": 142.85714285714286,
         "left": 0,
-        "width": 333.33333333333337,
-        "height": 357.14285714285717,
-        "backgroundColor": "#000000"
+        "width": 333,
+        "height": 357.1428571428571,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "price",
+        "bottom": 159.859375,
+        "right": 14.0625,
+        "width": 100,
+        "text": "34995",
+        "fontFamily": "Impact",
+        "fontSize": 101,
+        "fontWeight": 1000,
+        "color": "#c0a151",
+        "rotation": 0,
+        "textDecoration": "none"
+      },
+      {
+        "type": "text",
+        "top": 331.140625,
+        "left": 22.265625,
+        "text": "Boombox 3",
+        "fontFamily": "Mulish",
+        "fontSize": 35,
+        "fontWeight": 900,
+        "color": "#ffffff",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 376.140625,
+        "left": 23.265625,
+        "text": "Noir",
+        "fontFamily": "Mulish",
+        "fontSize": 20,
+        "fontWeight": 700,
+        "color": "#ffffff",
+        "rotation": 0
       },
       {
         "type": "image",
-        "top": -4.859375,
-        "left": -61.734375,
-        "width": 450,
+        "top": 330.671875,
+        "left": 228.4375,
+        "width": 50,
         "height": "auto",
-        "src": "/uploads/categories/images/5/CRF-BLACK-FRIDAY.jpg"
+        "src": "/uploads/categories/images/5/JBL logo.png"
+      }
+    ]
+  },
+  {
+    "id": 219,
+    "templateId": 29,
+    "categoryId": 6,
+    "dimensionId": 2,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 750,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/5/HEADER_BF.jpg",
+        "backgroundColor": "#0d0d0d"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 750,
+        "height": 357.1428571428571,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "price",
+        "bottom": 149.796875,
+        "right": 214.796875,
+        "width": 100,
+        "text": "150000",
+        "fontFamily": "Impact",
+        "fontSize": 142,
+        "fontWeight": 1000,
+        "color": "#000000",
+        "rotation": 0,
+        "textDecoration": "none"
+      },
+      {
+        "type": "verticalLine",
+        "top": 164.703125,
+        "left": 571.234375,
+        "height": 138,
+        "color": "#000000",
+        "thickness": 2
+      },
+      {
+        "type": "number",
+        "bottom": 250,
+        "right": 0,
+        "text": "200000",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0,
+        "textDecoration": "line-through",
+        "showCustomValue": false
+      },
+      {
+        "type": "text",
+        "top": 371,
+        "left": 27,
+        "text": "Tévéviseur 80\"",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#0d0d0d",
+        "rotation": 0,
+        "showCustomValue": true
+      },
+      {
+        "type": "text",
+        "top": 393.703125,
+        "left": 27.234375,
+        "text": "Samsung",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0,
+        "showCustomValue": false
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "templateId": 29,
+    "categoryId": 6,
+    "dimensionId": 5,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/5/HEADER_BF.jpg",
+        "backgroundColor": "#ff0000"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 500,
+        "height": 357.1428571428571,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "text",
+        "top": 338,
+        "left": 16,
+        "text": "Texte par défaut",
+        "fontSize": 29,
+        "fontWeight": 900,
+        "color": "#ffffff",
+        "rotation": 0,
+        "fontFamily": "Impact",
+        "showCustomValue": false
+      },
+      {
+        "type": "price",
+        "bottom": 292.796875,
+        "right": 259.40625,
+        "width": 100,
+        "text": "1000",
+        "fontFamily": "Impact",
+        "fontSize": 50,
+        "fontWeight": 1000,
+        "color": "#fafafa",
+        "rotation": 0,
+        "textDecoration": "none",
+        "showCustomValue": false
+      },
+      {},
+      {},
+      {
+        "type": "text",
+        "top": 261,
+        "left": 13,
+        "text": "Texte par défaut",
+        "fontSize": 34,
+        "fontWeight": 900,
+        "color": "#ffffff",
+        "rotation": 0,
+        "fontFamily": "Impact",
+        "showCustomValue": false
+      },
+      {
+        "type": "text",
+        "top": 230,
+        "left": 13,
+        "text": "Texte par défaut ",
+        "fontSize": 34,
+        "fontWeight": 900,
+        "color": "#ffffff",
+        "rotation": 0,
+        "fontFamily": "Impact",
+        "showCustomValue": false
+      },
+      {
+        "type": "text",
+        "top": 411,
+        "left": 23,
+        "text": "Texte par défautTexte par défaut",
+        "fontSize": 29,
+        "fontWeight": 900,
+        "color": "#ffffff",
+        "rotation": 0,
+        "fontFamily": "Impact",
+        "showCustomValue": false
+      },
+      {
+        "type": "text",
+        "top": 294,
+        "left": 63,
+        "text": "Texte par défautTexte par défaut",
+        "fontSize": 29,
+        "fontWeight": 900,
+        "color": "#ffffff",
+        "rotation": 0,
+        "fontFamily": "Impact",
+        "showCustomValue": false
+      },
+      {
+        "type": "text",
+        "top": 221,
+        "left": 63,
+        "text": "Texte par défautTexte par défaut",
+        "fontSize": 29,
+        "fontWeight": 900,
+        "color": "#ffffff",
+        "rotation": 0,
+        "fontFamily": "Impact",
+        "showCustomValue": false
+      },
+      {
+        "type": "text",
+        "top": 421,
+        "left": 33,
+        "text": "Texte par défautTexte par défaut",
+        "fontSize": 29,
+        "fontWeight": 900,
+        "color": "#ffffff",
+        "rotation": 0,
+        "fontFamily": "Impact",
+        "showCustomValue": false
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "templateId": 29,
+    "categoryId": 6,
+    "dimensionId": 1,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 333,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/6/HEADER_BF.jpg",
+        "backgroundColor": "#000000"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 333,
+        "height": 357.1428571428571,
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "price",
