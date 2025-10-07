@@ -902,42 +902,89 @@ app.get("/api/templates", (req, res) => {
   }
 });
 
+/**
+ * Route POST pour ajouter un nouveau template
+ * Endpoint: /api/add-template
+ * Méthode: POST
+ *
+ * Cette route permet d'ajouter un nouveau template au fichier templates.json.
+ * Elle génère automatiquement un ID unique et sauvegarde les données.
+ */
 app.post("/api/add-template", (req, res) => {
+  // Définir le chemin vers le fichier de données des templates
   const dataPath = path.join(__dirname, "data", "templates.json");
 
+  // Récupérer les données du template depuis le corps de la requête
   const newData = req.body;
 
+  // Validation des données d'entrée
+  // Vérifier que les données existent et sont un objet valide
   if (!newData || typeof newData !== "object") {
     return res.status(400).json({ error: "Données invalides" });
   }
 
-  // Lire le fichier actuel
+  // Vérifier que le nom du template est fourni
+  if (!newData.name || typeof newData.name !== "string" || !newData.name.trim()) {
+    return res.status(400).json({ error: "Le nom du template est requis" });
+  }
+
+  // Lire le fichier templates.json existant de manière asynchrone
   fs.readFile(dataPath, "utf8", (err, data) => {
+    // Gestion d'erreur lors de la lecture du fichier
     if (err) return res.status(500).json({ error: "Erreur lecture fichier" });
 
+    // Initialiser un tableau vide pour les données des templates
     let templatedata = [];
     try {
+      // Parser le contenu JSON du fichier
       templatedata = JSON.parse(data);
     } catch (e) {
+      // Retourner une erreur si le JSON est malformé
       return res.status(500).json({ error: "Fichier JSON invalide" });
     }
 
-    // Trouver le plus grand ID existant
+    // Vérifier si un template avec le même nom existe déjà
+    // Comparaison insensible à la casse pour éviter les doublons comme "trucx-Dark" et "trucx-dark"
+    const existingTemplate = templatedata.find(template =>
+      template.name && template.name.toLowerCase() === newData.name.toLowerCase()
+    );
+    console.log(existingTemplate)
+
+    // Si un template avec ce nom existe déjà, retourner une erreur
+    if (existingTemplate) {
+      return res.status(409).json({
+        error: "Un template avec ce nom existe déjà",
+        existingTemplate: {
+          id: existingTemplate.id,
+          name: existingTemplate.name
+        }
+      });
+    }
+
+    // Trouver le plus grand ID existant dans les templates
+    // Utilise reduce pour parcourir tous les éléments et trouver l'ID maximum
     const lastId = templatedata.reduce((maxId, item) => {
       return item.id > maxId ? item.id : maxId;
-    }, 0);
+    }, 0); // Valeur initiale de 0 si le tableau est vide
 
-    // Assigner un nouvel ID
+    // Générer le prochain ID disponible (incrémentation de 1)
     const nextId = lastId + 1;
+    
+    // Créer la nouvelle entrée en combinant l'ID généré avec les données reçues
+    // L'opérateur spread (...) copie toutes les propriétés de newData
     const newEntry = { id: nextId, ...newData };
 
-    // Ajouter la nouvelle donnée
+    // Ajouter la nouvelle entrée au tableau des templates
     templatedata.push(newEntry);
 
-    // Réécrire le fichier
+    // Sauvegarder le fichier mis à jour de manière asynchrone
+    // JSON.stringify avec indentation de 2 espaces pour la lisibilité
     fs.writeFile(dataPath, JSON.stringify(templatedata, null, 2), (err) => {
+      // Gestion d'erreur lors de l'écriture du fichier
       if (err)
         return res.status(500).json({ error: "Erreur écriture fichier" });
+      
+      // Retourner une réponse de succès avec les données ajoutées
       res.json({ message: "Fichier mis à jour", newData });
     });
   });
@@ -2405,6 +2452,7 @@ app.post("/api/categories/:id/duplicate", authenticateToken, async (req, res) =>
     const lastTemplateId = templates.reduce((maxId, item) => Math.max(maxId, item.id || 0), 0);
     let nextTemplateId = lastTemplateId + 1;
     const templateIdMap = new Map(); // oldTemplateId -> newTemplateId
+    const newTemplateImageNameByNewId = new Map(); // newTemplateId -> new image filename
 
     for (const t of sourceTemplates) {
       const newT = { ...t };
@@ -2412,8 +2460,33 @@ app.post("/api/categories/:id/duplicate", authenticateToken, async (req, res) =>
       templateIdMap.set(t.id, newId);
       newT.id = newId;
       newT.categoryId = newCategoryId;
-      newT.name = sanitizedPrefix ? `${sanitizedPrefix}-${t.name}` : t.name;
-      // image et shopIds conservés
+      // newT.name = sanitizedPrefix ? `${sanitizedPrefix}-${t.name}` : t.name;
+      newT.name = sanitizedPrefix ;
+
+      // Renommer l'image miniature pour correspondre au nouveau nom du template (en gardant l'extension)
+      let newImageName = t.image;
+      try {
+        if (t.image && typeof t.image === "string") {
+          const ext = path.extname(t.image) || "";
+          newImageName = `${sanitizedPrefix}${ext}`;
+          // newImageName = `${newT.name}${ext}`;
+          const miniDir = path.join(__dirname, "uploads", "miniatures", String(newCategoryId));
+          const from = path.join(miniDir, t.image);
+          const to = path.join(miniDir, newImageName);
+          // Tenter le renommage si le fichier source existe
+          const exists = await fsp.access(from).then(() => true).catch(() => false);
+          if (exists) {
+            await fsp.rename(from, to);
+            console.log(`Miniature renommée: ${t.image} -> ${newImageName}`);
+          }
+        }
+      } catch (e) {
+        console.warn("Renommage miniature dupliquée échoué:", e);
+      }
+      newT.image = newImageName;
+      newTemplateImageNameByNewId.set(newId, newImageName);
+
+      // shopIds conservés
       templates.push(newT);
     }
     if (sourceTemplates.length > 0) {
@@ -2432,7 +2505,13 @@ app.post("/api/categories/:id/duplicate", authenticateToken, async (req, res) =>
         if (templateIdMap.has(it.templateId)) {
           const newIt = { ...it };
           newIt.id = nextImageTplId++;
-          newIt.templateId = templateIdMap.get(it.templateId);
+          const newTplId = templateIdMap.get(it.templateId);
+          newIt.templateId = newTplId;
+          // Mettre à jour le nom du fichier image pour correspondre au nouveau nom du template
+          const suggestedName = newTemplateImageNameByNewId.get(newTplId);
+          if (suggestedName) {
+            newIt.name = suggestedName;
+          }
           imagesTemplates.push(newIt);
           hasNewImageTemplates = true;
         }

@@ -100,24 +100,30 @@
   },
   {
     "id": 28,
-    "name": "Blacky-barre",
-    "image": "blacky-barre.png",
+    "name": "meka50%",
+    "image": "meka50-.png",
     "categoryId": 5,
     "shopIds": [
-      1,
-      2,
       3
     ]
   },
   {
     "id": 29,
-    "name": "Yellow-Blacky-barre",
-    "image": "blacky-barre.png",
+    "name": "meka-42",
+    "image": "meka-42.png",
     "categoryId": 6,
     "shopIds": [
-      1,
-      2,
       3
+    ]
+  },
+  {
+    "id": 30,
+    "name": "41",
+    "image": "41.png",
+    "categoryId": 7,
+    "shopIds": [
+      3,
+      1
     ]
   }
 ]

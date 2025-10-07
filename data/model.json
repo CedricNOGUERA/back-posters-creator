@@ -20793,89 +20793,170 @@
     "id": 216,
     "templateId": 28,
     "categoryId": 5,
-    "dimensionId": 2,
+    "dimensionId": 9,
     "canvas": [
       {
         "type": "header",
         "top": 0,
         "left": 0,
-        "width": 750,
+        "width": 500,
         "height": 142.85714285714286,
-        "src": "/uploads/categories/headerPictures/5/HEADER_BF.jpg",
-        "backgroundColor": "#0d0d0d"
+        "src": "/uploads/categories/headerPictures/5/50Sur2.png",
+        "backgroundColor": "#007bff"
       },
       {
         "type": "background-color",
         "top": 142.85714285714286,
         "left": 0,
-        "width": 750,
-        "height": 357.1428571428571,
+        "width": 500,
+        "height": 357.14285714285717,
         "backgroundColor": "#ffea00"
       },
       {
-        "type": "price",
-        "bottom": 149.796875,
-        "right": 214.796875,
-        "width": 100,
-        "text": "150000",
-        "fontFamily": "Impact",
-        "fontSize": 142,
-        "fontWeight": 1000,
+        "type": "text",
+        "top": 403.203125,
+        "left": 58.09375,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
         "color": "#000000",
-        "rotation": 0,
-        "textDecoration": "none"
+        "rotation": 0
       },
       {
-        "type": "verticalLine",
-        "top": 164.703125,
-        "left": 571.234375,
-        "height": 138,
+        "type": "text",
+        "top": 427.203125,
+        "left": 58.09375,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
         "color": "#000000",
-        "thickness": 2
+        "rotation": 0
       },
       {
-        "type": "number",
-        "bottom": 250,
-        "right": 0,
-        "text": "200000",
+        "type": "text",
+        "top": 446.203125,
+        "left": 58.09375,
+        "text": "Boeuf",
         "fontFamily": "Mulish",
         "fontSize": 16,
         "fontWeight": 700,
         "color": "#000000",
-        "rotation": 0,
-        "textDecoration": "line-through",
-        "showCustomValue": false
+        "rotation": 0
       },
       {
         "type": "text",
-        "top": 371,
-        "left": 27,
-        "text": "Tévéviseur 80\"",
-        "fontFamily": "Mulish",
-        "fontSize": 19,
-        "fontWeight": 900,
-        "color": "#0d0d0d",
-        "rotation": 0,
-        "showCustomValue": true
-      },
-      {
-        "type": "text",
-        "top": 393.703125,
-        "left": 27.234375,
-        "text": "Samsung",
+        "top": 467.203125,
+        "left": 56.09375,
+        "text": "12x175g",
         "fontFamily": "Mulish",
         "fontSize": 16,
-        "fontWeight": 900,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "price",
+        "bottom": 245.796875,
+        "right": 333.90625,
+        "width": 100,
+        "text": "1000",
+        "fontFamily": "Impact",
+        "fontSize": 50,
+        "fontWeight": 1000,
         "color": "#000000",
         "rotation": 0,
-        "showCustomValue": false
+        "textDecoration": "none"
       }
     ]
   },
   {
     "id": 217,
-    "templateId": 28,
-    "categoryId": 5,
+    "templateId": 29,
+    "categoryId": 6,
+    "dimensionId": 9,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/6/4+2.png",
+        "backgroundColor": "#007bff"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 500,
+        "height": 357.14285714285717,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "text",
+        "top": 403.203125,
+        "left": 58.09375,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 427.203125,
+        "left": 58.09375,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 446.203125,
+        "left": 58.09375,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 467.203125,
+        "left": 56.09375,
+        "text": "12x175g",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "price",
+        "bottom": 245.796875,
+        "right": 333.90625,
+        "width": 100,
+        "text": "1000",
+        "fontFamily": "Impact",
+        "fontSize": 50,
+        "fontWeight": 1000,
+        "color": "#000000",
+        "rotation": 0,
+        "textDecoration": "none"
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "templateId": 29,
+    "categoryId": 6,
     "dimensionId": 5,
     "canvas": [
       {
@@ -20884,184 +20965,93 @@
         "left": 0,
         "width": 500,
         "height": 142.85714285714286,
-        "src": "/uploads/categories/headerPictures/5/HEADER_BF.jpg",
-        "backgroundColor": "#ff0000"
+        "src": "/uploads/categories/headerPictures/6/4+2.png",
+        "backgroundColor": "#007bff"
       },
       {
         "type": "background-color",
         "top": 142.85714285714286,
         "left": 0,
         "width": 500,
-        "height": 357.1428571428571,
+        "height": 357.14285714285717,
         "backgroundColor": "#ffea00"
       },
       {
         "type": "text",
-        "top": 338,
-        "left": 16,
-        "text": "Texte par défaut",
-        "fontSize": 29,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "price",
-        "bottom": 292.796875,
-        "right": 259.40625,
-        "width": 100,
-        "text": "1000",
-        "fontFamily": "Impact",
-        "fontSize": 50,
-        "fontWeight": 1000,
-        "color": "#fafafa",
-        "rotation": 0,
-        "textDecoration": "none",
-        "showCustomValue": false
-      },
-      {},
-      {},
-      {
-        "type": "text",
-        "top": 261,
-        "left": 13,
-        "text": "Texte par défaut",
-        "fontSize": 34,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "text",
-        "top": 230,
-        "left": 13,
-        "text": "Texte par défaut ",
-        "fontSize": 34,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "text",
-        "top": 411,
-        "left": 23,
-        "text": "Texte par défautTexte par défaut",
-        "fontSize": 29,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "text",
-        "top": 294,
-        "left": 63,
-        "text": "Texte par défautTexte par défaut",
-        "fontSize": 29,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "text",
-        "top": 221,
-        "left": 63,
-        "text": "Texte par défautTexte par défaut",
-        "fontSize": 29,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "text",
-        "top": 421,
-        "left": 33,
-        "text": "Texte par défautTexte par défaut",
-        "fontSize": 29,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      }
-    ]
-  },
-  {
-    "id": 218,
-    "templateId": 28,
-    "categoryId": 5,
-    "dimensionId": 1,
-    "canvas": [
-      {
-        "type": "header",
-        "top": 0,
-        "left": 0,
-        "width": 333,
-        "height": 142.85714285714286,
-        "src": "/uploads/categories/headerPictures/6/HEADER_BF.jpg",
-        "backgroundColor": "#000000"
-      },
-      {
-        "type": "background-color",
-        "top": 142.85714285714286,
-        "left": 0,
-        "width": 333,
-        "height": 357.1428571428571,
-        "backgroundColor": "#ffea00"
-      },
-      {
-        "type": "price",
-        "bottom": 159.859375,
-        "right": 14.0625,
-        "width": 100,
-        "text": "34995",
-        "fontFamily": "Impact",
-        "fontSize": 101,
-        "fontWeight": 1000,
-        "color": "#c0a151",
-        "rotation": 0,
-        "textDecoration": "none"
-      },
-      {
-        "type": "text",
-        "top": 331.140625,
-        "left": 22.265625,
-        "text": "Boombox 3",
+        "top": 423.203125,
+        "left": 22.09375,
+        "text": "Carton Cup Nouilles",
         "fontFamily": "Mulish",
-        "fontSize": 35,
+        "fontSize": 19,
         "fontWeight": 900,
-        "color": "#ffffff",
+        "color": "#000000",
         "rotation": 0
       },
       {
         "type": "text",
-        "top": 376.140625,
-        "left": 23.265625,
-        "text": "Noir",
+        "top": 447.203125,
+        "left": 22.09375,
+        "text": "NONGHIM",
         "fontFamily": "Mulish",
-        "fontSize": 20,
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 466.203125,
+        "left": 22.09375,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
         "fontWeight": 700,
-        "color": "#ffffff",
+        "color": "#000000",
         "rotation": 0
       },
       {
-        "type": "image",
-        "top": 330.671875,
-        "left": 228.4375,
-        "width": 50,
-        "height": "auto",
-        "src": "/uploads/categories/images/5/JBL logo.png"
+        "type": "text",
+        "top": 193.203125,
+        "left": 320.09375,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 217.203125,
+        "left": 320.09375,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 236.203125,
+        "left": 320.09375,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 257.203125,
+        "left": 318.09375,
+        "text": "12x175g",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
       }
     ]
   },
@@ -21069,212 +21059,83 @@
     "id": 219,
     "templateId": 29,
     "categoryId": 6,
-    "dimensionId": 2,
+    "dimensionId": 4,
     "canvas": [
       {
         "type": "header",
         "top": 0,
         "left": 0,
-        "width": 750,
+        "width": 500,
         "height": 142.85714285714286,
-        "src": "/uploads/categories/headerPictures/5/HEADER_BF.jpg",
-        "backgroundColor": "#0d0d0d"
+        "src": "/uploads/categories/headerPictures/7/4+2.png",
+        "backgroundColor": "#007bff"
       },
       {
         "type": "background-color",
         "top": 142.85714285714286,
         "left": 0,
-        "width": 750,
-        "height": 357.1428571428571,
+        "width": 500,
+        "height": 357.14285714285717,
         "backgroundColor": "#ffea00"
       },
       {
-        "type": "price",
-        "bottom": 149.796875,
-        "right": 214.796875,
-        "width": 100,
-        "text": "150000",
-        "fontFamily": "Impact",
-        "fontSize": 142,
-        "fontWeight": 1000,
+        "type": "text",
+        "top": 215.203125,
+        "left": 106.765625,
+        "text": "Texte par défaut",
+        "fontSize": 16,
+        "fontWeight": 900,
         "color": "#000000",
-        "rotation": 0,
-        "textDecoration": "none"
+        "rotation": 0
       },
       {
-        "type": "verticalLine",
-        "top": 164.703125,
-        "left": 571.234375,
-        "height": 138,
+        "type": "text",
+        "top": 382.203125,
+        "left": 27.765625,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
         "color": "#000000",
-        "thickness": 2
+        "rotation": 0
       },
       {
-        "type": "number",
-        "bottom": 250,
-        "right": 0,
-        "text": "200000",
+        "type": "text",
+        "top": 406.203125,
+        "left": 27.765625,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 425.203125,
+        "left": 27.765625,
+        "text": "Boeuf",
         "fontFamily": "Mulish",
         "fontSize": 16,
         "fontWeight": 700,
         "color": "#000000",
-        "rotation": 0,
-        "textDecoration": "line-through",
-        "showCustomValue": false
+        "rotation": 0
       },
       {
         "type": "text",
-        "top": 371,
-        "left": 27,
-        "text": "Tévéviseur 80\"",
-        "fontFamily": "Mulish",
-        "fontSize": 19,
-        "fontWeight": 900,
-        "color": "#0d0d0d",
-        "rotation": 0,
-        "showCustomValue": true
-      },
-      {
-        "type": "text",
-        "top": 393.703125,
-        "left": 27.234375,
-        "text": "Samsung",
+        "top": 446.203125,
+        "left": 25.765625,
+        "text": "12x175g",
         "fontFamily": "Mulish",
         "fontSize": 16,
-        "fontWeight": 900,
+        "fontWeight": 400,
         "color": "#000000",
-        "rotation": 0,
-        "showCustomValue": false
+        "rotation": 0
       }
     ]
   },
   {
     "id": 220,
-    "templateId": 29,
-    "categoryId": 6,
-    "dimensionId": 5,
-    "canvas": [
-      {
-        "type": "header",
-        "top": 0,
-        "left": 0,
-        "width": 500,
-        "height": 142.85714285714286,
-        "src": "/uploads/categories/headerPictures/5/HEADER_BF.jpg",
-        "backgroundColor": "#ff0000"
-      },
-      {
-        "type": "background-color",
-        "top": 142.85714285714286,
-        "left": 0,
-        "width": 500,
-        "height": 357.1428571428571,
-        "backgroundColor": "#ffea00"
-      },
-      {
-        "type": "text",
-        "top": 338,
-        "left": 16,
-        "text": "Texte par défaut",
-        "fontSize": 29,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "price",
-        "bottom": 292.796875,
-        "right": 259.40625,
-        "width": 100,
-        "text": "1000",
-        "fontFamily": "Impact",
-        "fontSize": 50,
-        "fontWeight": 1000,
-        "color": "#fafafa",
-        "rotation": 0,
-        "textDecoration": "none",
-        "showCustomValue": false
-      },
-      {},
-      {},
-      {
-        "type": "text",
-        "top": 261,
-        "left": 13,
-        "text": "Texte par défaut",
-        "fontSize": 34,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "text",
-        "top": 230,
-        "left": 13,
-        "text": "Texte par défaut ",
-        "fontSize": 34,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "text",
-        "top": 411,
-        "left": 23,
-        "text": "Texte par défautTexte par défaut",
-        "fontSize": 29,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "text",
-        "top": 294,
-        "left": 63,
-        "text": "Texte par défautTexte par défaut",
-        "fontSize": 29,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "text",
-        "top": 221,
-        "left": 63,
-        "text": "Texte par défautTexte par défaut",
-        "fontSize": 29,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      },
-      {
-        "type": "text",
-        "top": 421,
-        "left": 33,
-        "text": "Texte par défautTexte par défaut",
-        "fontSize": 29,
-        "fontWeight": 900,
-        "color": "#ffffff",
-        "rotation": 0,
-        "fontFamily": "Impact",
-        "showCustomValue": false
-      }
-    ]
-  },
-  {
-    "id": 221,
     "templateId": 29,
     "categoryId": 6,
     "dimensionId": 1,
@@ -21283,61 +21144,516 @@
         "type": "header",
         "top": 0,
         "left": 0,
-        "width": 333,
+        "width": 333.33333333333337,
         "height": 142.85714285714286,
-        "src": "/uploads/categories/headerPictures/6/HEADER_BF.jpg",
-        "backgroundColor": "#000000"
+        "src": "/uploads/categories/headerPictures/6/4+2.png",
+        "backgroundColor": "#007bff"
       },
       {
         "type": "background-color",
         "top": 142.85714285714286,
         "left": 0,
-        "width": 333,
-        "height": 357.1428571428571,
+        "width": 333.33333333333337,
+        "height": 357.14285714285717,
         "backgroundColor": "#ffea00"
       },
       {
+        "type": "text",
+        "top": 215.203125,
+        "left": 106.765625,
+        "text": "Texte par défaut",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 382.203125,
+        "left": 27.765625,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 406.203125,
+        "left": 27.765625,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 425.203125,
+        "left": 27.765625,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 446.203125,
+        "left": 25.765625,
+        "text": "12x175g",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": 221,
+    "templateId": 30,
+    "categoryId": 7,
+    "dimensionId": 9,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/7/4+1offert.png",
+        "backgroundColor": "#007bff"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 500,
+        "height": 357.14285714285717,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "text",
+        "top": 403.203125,
+        "left": 58.09375,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 427.203125,
+        "left": 58.09375,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 446.203125,
+        "left": 58.09375,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 467.203125,
+        "left": 56.09375,
+        "text": "12x175g",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
         "type": "price",
-        "bottom": 159.859375,
-        "right": 14.0625,
+        "bottom": 245.796875,
+        "right": 333.90625,
         "width": 100,
-        "text": "34995",
+        "text": "1000",
         "fontFamily": "Impact",
-        "fontSize": 101,
+        "fontSize": 50,
         "fontWeight": 1000,
-        "color": "#c0a151",
+        "color": "#000000",
         "rotation": 0,
         "textDecoration": "none"
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "templateId": 30,
+    "categoryId": 7,
+    "dimensionId": 5,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/7/4+1offert.png",
+        "backgroundColor": "#007bff"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 500,
+        "height": 357.14285714285717,
+        "backgroundColor": "#ffea00"
       },
       {
         "type": "text",
-        "top": 331.140625,
-        "left": 22.265625,
-        "text": "Boombox 3",
+        "top": 423.203125,
+        "left": 22.09375,
+        "text": "Carton Cup Nouilles",
         "fontFamily": "Mulish",
-        "fontSize": 35,
+        "fontSize": 19,
         "fontWeight": 900,
-        "color": "#ffffff",
+        "color": "#000000",
         "rotation": 0
       },
       {
         "type": "text",
-        "top": 376.140625,
-        "left": 23.265625,
-        "text": "Noir",
+        "top": 447.203125,
+        "left": 22.09375,
+        "text": "NONGHIM",
         "fontFamily": "Mulish",
-        "fontSize": 20,
-        "fontWeight": 700,
-        "color": "#ffffff",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
         "rotation": 0
       },
       {
-        "type": "image",
-        "top": 330.671875,
-        "left": 228.4375,
-        "width": 50,
-        "height": "auto",
-        "src": "/uploads/categories/images/5/JBL logo.png"
+        "type": "text",
+        "top": 466.203125,
+        "left": 22.09375,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 193.203125,
+        "left": 320.09375,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 217.203125,
+        "left": 320.09375,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 236.203125,
+        "left": 320.09375,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 257.203125,
+        "left": 318.09375,
+        "text": "12x175g",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": 223,
+    "templateId": 30,
+    "categoryId": 7,
+    "dimensionId": 4,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/7/4+1offert.png",
+        "backgroundColor": "#007bff"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 500,
+        "height": 357.14285714285717,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "text",
+        "top": 423.203125,
+        "left": 22.09375,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 447.203125,
+        "left": 22.09375,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 466.203125,
+        "left": 22.09375,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 193.203125,
+        "left": 320.09375,
+        "text": "Carton Cup",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 217.203125,
+        "left": 320.09375,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 236.203125,
+        "left": 320.09375,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 257.203125,
+        "left": 318.09375,
+        "text": "12x175g",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": 224,
+    "templateId": 30,
+    "categoryId": 7,
+    "dimensionId": 1,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 333.33333333333337,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/7/4+1offert.png",
+        "backgroundColor": "#007bff"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 333.33333333333337,
+        "height": 357.14285714285717,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "text",
+        "top": 215.203125,
+        "left": 106.765625,
+        "text": "Texte par défaut",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 382.203125,
+        "left": 27.765625,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 406.203125,
+        "left": 27.765625,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 425.203125,
+        "left": 27.765625,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 446.203125,
+        "left": 25.765625,
+        "text": "12x175g",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "templateId": 30,
+    "categoryId": 6,
+    "dimensionId": 9,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 142.85714285714286,
+        "src": "/uploads/categories/headerPictures/7/4+2.png",
+        "backgroundColor": "#007bff"
+      },
+      {
+        "type": "background-color",
+        "top": 142.85714285714286,
+        "left": 0,
+        "width": 500,
+        "height": 357.14285714285717,
+        "backgroundColor": "#ffea00"
+      },
+      {
+        "type": "text",
+        "top": 215.203125,
+        "left": 106.765625,
+        "text": "Texte par défaut",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 382.203125,
+        "left": 27.765625,
+        "text": "Carton Cup Nouilles",
+        "fontFamily": "Mulish",
+        "fontSize": 19,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 406.203125,
+        "left": 27.765625,
+        "text": "NONGHIM",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 900,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 425.203125,
+        "left": 27.765625,
+        "text": "Boeuf",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "color": "#000000",
+        "rotation": 0
+      },
+      {
+        "type": "text",
+        "top": 446.203125,
+        "left": 25.765625,
+        "text": "12x175g",
+        "fontFamily": "Mulish",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "color": "#000000",
+        "rotation": 0
       }
     ]
   }

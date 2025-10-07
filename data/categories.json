@@ -133,15 +133,15 @@
   },
   {
     "id": 5,
-    "name": "Blacky",
-    "image": "/uploads/categories/headerPictures/5/HEADER_BF.jpg",
+    "name": "Meka",
+    "image": "/uploads/categories/headerPictures/5/50Sur2.png",
     "imageRglt": null,
     "icon": {
-      "name": "Étoile",
-      "value": "fa fa-star"
+      "name": "Pourcent",
+      "value": "fa fa-percent"
     },
     "shopIds": [
-      1
+      3
     ],
     "canvasId": 5,
     "canvas": [
@@ -151,9 +151,9 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "src": "/uploads/categories/headerPictures/6/HEADER_BF.jpg",
+        "src": "/uploads/categories/headerPictures/6/50Sur2.png",
         "srcRglt": null,
-        "backgroundColor": "#ff0000"
+        "backgroundColor": "#007bff"
       },
       {
         "type": "background-color",
@@ -167,15 +167,15 @@
   },
   {
     "id": 6,
-    "name": "Yellow",
-    "image": "/uploads/categories/headerPictures/6/HEADER_BF.jpg",
+    "name": "meka 4+2",
+    "image": "/uploads/categories/headerPictures/6/4+2.png",
     "imageRglt": null,
     "icon": {
-      "name": "Étoile",
-      "value": "fa fa-star"
+      "name": "Pourcent",
+      "value": "fa fa-percent"
     },
     "shopIds": [
-      1
+      3
     ],
     "canvasId": 6,
     "canvas": [
@@ -185,9 +185,44 @@
         "left": 0,
         "width": 500,
         "height": 125,
-        "src": "/uploads/categories/headerPictures/6/HEADER_BF.jpg",
+        "src": "/uploads/categories/headerPictures/7/4+2.png",
         "srcRglt": null,
-        "backgroundColor": "#ff0000"
+        "backgroundColor": "#007bff"
+      },
+      {
+        "type": "background-color",
+        "top": 125,
+        "left": 0,
+        "width": 500,
+        "height": 375,
+        "backgroundColor": "#ffea00"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "4+1",
+    "image": "/uploads/categories/headerPictures/7/4+1offert.png",
+    "imageRglt": null,
+    "icon": {
+      "name": "Pourcent",
+      "value": "fa fa-percent"
+    },
+    "shopIds": [
+      3,
+      1
+    ],
+    "canvasId": 7,
+    "canvas": [
+      {
+        "type": "header",
+        "top": 0,
+        "left": 0,
+        "width": 500,
+        "height": 125,
+        "src": "/uploads/categories/headerPictures/7/4+1offert.png",
+        "srcRglt": null,
+        "backgroundColor": "#007bff"
       },
       {
         "type": "background-color",
